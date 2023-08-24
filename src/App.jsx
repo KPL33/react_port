@@ -8,7 +8,8 @@ function App() {
   const currentPage = useLocation().pathname;
   return (
     <>
-      <div className="header-app">
+    {/* Give this div a "className", to style pg bgrnd, etc. "class" is reserved in JS, so need to use "className*/}
+      <div className="Portfolio">
         <Header currentPage={currentPage}/>
         <Page currentPage={currentPage}/>
         <Footer />
