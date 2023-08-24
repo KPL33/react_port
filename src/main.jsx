@@ -12,8 +12,6 @@ import ErrorPage from './components/Error';
 import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
-import Resume from './components/Resume';
-
 
 const router = createBrowserRouter([
   {
@@ -32,13 +30,9 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: <Contact />,
-      },
-      {
-        path: 'resume',
-        element: <Resume />,
       }
-    ],
-  },
+    ]
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

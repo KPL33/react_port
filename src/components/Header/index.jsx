@@ -1,4 +1,4 @@
-import NavBar from './components/NavBar';
+import NavBar from '../NavBar';
 import './styles.css';
 
 //This shows the contents of our "Header". It renders the "nav-bar" component.
