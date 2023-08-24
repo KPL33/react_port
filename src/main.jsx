@@ -12,6 +12,7 @@ import ErrorPage from './components/Error';
 import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import Resume from './components/Resume';
 
 const router = createBrowserRouter([
   {
@@ -21,15 +22,19 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <About />,
+        element: <About />
       },
       {
         path: 'projects',
-        element: <Projects />,
+        element: <Projects />
       },
       {
         path: 'contact',
-        element: <Contact />,
+        element: <Contact />
+      },
+      {
+        path: 'resume',
+        element: <Resume />
       }
     ]
   }
