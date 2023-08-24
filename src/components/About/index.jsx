@@ -1,5 +1,5 @@
-//This shows the contents of our default page-load, the "AboutPage".
-export default function AboutPage() {
+//This shows the contents of our default page-load, the "About".
+export default function About() {
     return (
       <section>
         <p>

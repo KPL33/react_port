@@ -49,11 +49,7 @@ For each project that is featured in your portfolio, include the following:
 
 ## Getting Started
 
-You’ll use `vite` to build your portfolio, which will include the following:
-
-* A single `Header` component that appears on multiple pages
-
-* A single `Navigation` component within the header that will use `Link` components from `react-router-dom` to conditionally render the different sections of your portfolio
+`Header` appears on multiple pages; render Nav > within the header that will use `Link` components from `react-router-dom` to conditionally render the different sections of your portfolio
 
 * A single `Project` component that will be used multiple times in the Portfolio section
 

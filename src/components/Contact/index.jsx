@@ -1,5 +1,5 @@
 //This shows the contents of our "ContactPage".
-export default function ContactPage() {
+export default function Contact() {
     return (
       <section>
         <p>

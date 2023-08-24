@@ -4,7 +4,7 @@ import './styles.css';
 //This shows the contents of our "Header". It renders the "nav-bar" component.
 export default function Header() {
     return (
-        <div className="Header">
+        <header>
             <div className="main">
                     
             </div>
@@ -12,6 +12,6 @@ export default function Header() {
             <div className="nav">
                 <NavBar />
             </div>
-        </div>
+        </header>
     );
 }
