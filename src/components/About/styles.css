@@ -1,9 +1,29 @@
 #about {
     background-color: #400303;
+    display: flex;
+}
+
+#pic-box {
+    position: flex-start;
+    align-items: center;
+}
+
+#paragraph-box {
+    margin-top: 50px;
+    width: 70%;
+    position: flex-end;
+}
+
+.box {
+    display: inline-block;
+    background-color: grey;
+    height: 250px;
+    margin: 20px;
 }
 
 p {
-    color: #FFD700;
+    color: #eeede6;
+    padding: 10px;
 }
 
 #profile-pic {
