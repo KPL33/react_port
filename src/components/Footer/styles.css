@@ -1,18 +1,29 @@
 footer {
-    background-color: rgb(94, 21, 26);
+    background-color: #400303;
 }
 
 #socials {
     padding-top: 30px;
 }
 
-img {
-    width: 5%;
-    height: 5%;
+#linkedin:hover{ 
+    box-shadow: 0 0 100px greenyellow;
+    border-radius: 10%;
+}
+
+#leetcode {
+    width: 4%;
+    height: 4%;
 }
 
 #github {
     padding: 0px 50px;
+    color: white;
+}
+
+#linkedin, #github {
+    width: 5%;
+    height: 5%;
 }
 
 p {

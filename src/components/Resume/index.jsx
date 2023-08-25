@@ -6,6 +6,4 @@ export default function Resume() {
         <iframe src={ resume } width="100%" height="600px" title="Resume"></iframe>
       </div>
     );
-  }
-
-  
+}
