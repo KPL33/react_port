@@ -3,22 +3,19 @@ footer {
 }
 
 #socials {
-    padding-top: 30px;
-}
-
-#linkedin:hover{ 
-    box-shadow: 0 0 100px greenyellow;
-    border-radius: 10%;
+    padding-top: 30px;    
 }
 
 #leetcode {
     width: 4%;
     height: 4%;
+    
 }
 
 #github {
     padding: 0px 50px;
     color: white;
+    fill-opacity: 0.3;
 }
 
 #linkedin, #github {
