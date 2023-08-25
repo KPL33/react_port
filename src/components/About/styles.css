@@ -1,3 +1,15 @@
+#about {
+    background-color: #400303;
+}
+
 p {
-    color: black;
+    color: #FFD700;
+}
+
+#profile-pic {
+	margin: 20px;
+	border-radius: 50%;
+	width: 170px;
+	height: 200px;
+	box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.25);
 }

@@ -22,7 +22,7 @@ export default function App() {
   } else if (currentPage === '/Contact') {
     currentContent = <Contact />;
   } else {
-    currentContent = <Page />;
+    currentContent = <About />;
   }
 
   return (
