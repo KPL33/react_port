@@ -1,21 +1,37 @@
-import { useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Page from './components/Page';
 import Footer from './components/Footer';
 
-function App() {
+import About from './components/About/';
+import Projects from './components/Projects/';
+import Resume from './components/Resume';
+import Contact from './components/Contact/';
+
+export default function App() {
   const currentPage = useLocation().pathname;
+
+  let currentContent;
+  if (currentPage === '/About') {
+    currentContent = <About />;
+  } else if (currentPage === '/Projects') {
+    currentContent = <Projects />;
+  } else if (currentPage === '/Resume') {
+    currentContent = <Resume />;
+  } else if (currentPage === '/Contact') {
+    currentContent = <Contact />;
+  } else {
+    currentContent = <Page />;
+  }
+
   return (
     <>
-    {/* Give this div a "className", to style pg bgrnd, etc. "class" is reserved in JS, so need to use "className*/}
       <div className="Portfolio">
-        <Header currentPage={currentPage}/>
-        <Page currentPage={currentPage}/>
+        <Header />
+        {currentContent}
         <Footer />
       </div>
     </>
   );
 }
-
-export default App

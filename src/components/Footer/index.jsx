@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <footer>
       <div id="socials">
-        <img id="linkedin" src={ linkedin } alt="LinkedIn logo" />
-        <img id="github" src={ github }  alt="GitHub logo" />
-        <img id="leetcode" src={ leetcode } alt="LeetCode logo" />
+      <a href="https://www.linkedin.com/in/kevin-lewis92126"><img id="linkedin" src={ linkedin } alt="LinkedIn logo" /></a>
+      <a href="https://github.com/KPL33"><img id="github" src={ github }  alt="GitHub logo" /></a>
+        <a href="https://leetcode.com/KPL33/"><img id="leetcode" src={ leetcode } alt="LeetCode logo" /></a>
       </div>
       <div>
         <p>Made with React, by Kevin Lewis</p>
