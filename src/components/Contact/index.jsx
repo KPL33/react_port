@@ -1,40 +1,66 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
 
-import "./styles.css";
-
-//This shows the contents of our "ContactPage".
 export default function Contact() {
+  const [email, setEmail] = useState('');
+  const [isValidEmail, setIsValidEmail] = useState(true);
+
+  const handleEmailChange = (event) => {
+    const enteredEmail = event.target.value;
+    setEmail(enteredEmail);
+
+    const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    setIsValidEmail(emailPattern.test(enteredEmail));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    if (!isValidEmail) {
+      alert('Invalid email address');
+      return;
+    }
+
+    // Handle form submission logic here
+  };
+
   return (
     <section>
-      <form>
-      <h4>Contact</h4>
+      <form onSubmit={handleSubmit}>
+        <h3>Contact</h3>
         <div className="form-outline mb-4">
           <label className="form-label" htmlFor="form4Example1">
-            <h6>Name:</h6>
+            <h4>Name:</h4>
           </label>
           <input type="text" id="form4Example1" className="form-control" />
         </div>
 
         <div className="form-outline mb-4">
           <label className="form-label" htmlFor="form4Example2">
-          <h6>Email Address:</h6>
+            <h4>Email Address:</h4>
           </label>
-          <input type="email" id="form4Example2" className="form-control" />
+          <input
+            type="email"
+            id="form4Example2"
+            className={`form-control ${!isValidEmail ? 'is-invalid' : ''}`}
+            value={email}
+            onChange={handleEmailChange}
+          />
+          {!isValidEmail && (
+            <div className="invalid-feedback">Please enter a valid email address.</div>
+          )}
         </div>
 
         <div className="form-outline mb-4">
           <label className="form-label" htmlFor="form4Example3">
-          <h6>Message:</h6>
+            <h4>Message:</h4>
           </label>
-          <textarea
-            className="form-control"
-            id="form4Example3"
-            rows="4"
-          ></textarea>
+          <textarea className="form-control" id="form4Example3" rows="4"></textarea>
         </div>
 
         <button type="submit" className="btn btn-primary btn-block mb-4">
-          Send
+          <h3 id="send">Send</h3>
         </button>
       </form>
     </section>

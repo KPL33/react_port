@@ -1,25 +1,47 @@
-.form-label, h4 {
+.form-label, h3 {
     text-align: left;
     display: block;
-
     margin-bottom: 10px; /* Add some spacing between labels and input fields */
 }
-h4, h6 {
+
+h3, h4 {
     margin-top: 0;
+    font-weight: bold;
+
+}
+
+h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-family: "Righteous", sans-serif;
+}
+
+#send {
+    margin: 10px;
+    color: #400303;
+    margin: 0px;
+    font-size: 20px;
 }
 
 h4 {
-    color: white;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-h6 {
-    color: #F4C542
+    color: #F4C542;
+    font-family: "Nothing You Could Do", sans-serif;
 }
 
 form {
     background-color: #400303;
     padding: 1rem; /* Add some padding to the form container */
     border-radius: 0.7rem; /* Add border radius for a nicer look */
+}
+
+.btn.btn-primary.btn-block.mb-4 {
+    background-color: #F4C542;
+    border-color: white;
+}
+
+.btn.btn-primary.btn-block.mb-4:hover {
+    background-color: #400303;
+    #send {
+        color:white;
+    }
 }
