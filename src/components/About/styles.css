@@ -1,6 +1,7 @@
 #about {
     background-color: #400303;
     display: flex;
+    border-radius: 0.7rem;
 }
 
 #pic-box {
