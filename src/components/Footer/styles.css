@@ -5,19 +5,17 @@ footer {
 }
 
 #socials {
-    padding-top: 30px;    
+    padding: 20px 0px;    
 }
 
 #leetcode {
     width: 4%;
     height: 4%;
-    
 }
 
 #github {
-    padding: 0px 50px;
     color: white;
-    fill-opacity: 0.3;
+    margin: 0px 30px;
 }
 
 #linkedin, #github {
@@ -25,6 +23,6 @@ footer {
     height: 5%;
 }
 
-p {
-    padding-bottom: 20px;
+#madewith {
+    color: white;
 }
