@@ -8,9 +8,10 @@
     text-align: left;
     color: white;
     margin-bottom: 20px;
+    font-size: 30px;
 }
 
-h4 {
+.field-titles {
     color: #F4C542;
     font-family: "Nothing You Could Do", sans-serif;
     margin-top: 0;

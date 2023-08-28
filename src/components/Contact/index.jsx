@@ -31,14 +31,14 @@ export default function Contact() {
         <h3 id="contact">Contact</h3>
         <div className="form-outline mb-4">
           <label className="form-label" htmlFor="form4Example1">
-            <h4>Name:</h4>
+            <h4 className="field-titles">Name:</h4>
           </label>
           <input type="text" id="form4Example1" className="form-control" />
         </div>
 
         <div className="form-outline mb-4">
           <label className="form-label" htmlFor="form4Example2">
-            <h4>Email Address:</h4>
+          <h4 className="field-titles">Email Address:</h4>
           </label>
           <input
             type="email"
@@ -54,7 +54,7 @@ export default function Contact() {
 
         <div className="form-outline mb-4">
           <label className="form-label" htmlFor="form4Example3">
-            <h4>Message:</h4>
+          <h4 className="field-titles">Message:</h4>
           </label>
           <textarea className="form-control" id="form4Example3" rows="4"></textarea>
         </div>

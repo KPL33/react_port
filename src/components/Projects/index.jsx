@@ -5,83 +5,117 @@ import scheduler from "../../assets/scheduler.png";
 import pwd from "../../assets/pwd.png";
 import jate from "../../assets/jate.png";
 import weather from "../../assets/weather.png";
-import github from "../../assets/Octicons-mark-github.svg";
+import github2 from "../../assets/Octicons-mark-github.svg";
 export default function Projects() {
   return (
     <main>
       <h3 className="intro">My Projects</h3>
       <div className="projects">
-        <a
-          className="project-box"
-          href="https://shadowfre4k.github.io/Movie-Fight-Club/"
-        >
-          <div>
+        <div className="project-box">
+          <a href="https://shadowfre4k.github.io/Movie-Fight-Club/">
             <img
               className="box-container"
               src={mfc}
               alt="Image of 'Movie Fight Club App'"
             />
             <h5 className="title">Movie Fight Club</h5>
-            <div className="github-link">
-              <a href="https://github.com/KPL33"><img id="github" src={ github }  alt="GitHub logo" /></a>
-            </div>
+          </a>
+          <div className="github-link">
+            <a href="https://github.com/shadowfre4k/Movie-Fight-Club">
+              <img id="github2" src={github2} alt="GitHub logo" />
+            </a>
           </div>
-        </a>
-        <a
-          className="project-box"
-          href="https://murmuring-sierra-21351-123e19ae1f23.herokuapp.com/login"
-        >
-          <div>
+          <h6 className="desc">Front-End App</h6>
+        </div>
+
+        <div className="project-box">
+          <a href="https://murmuring-sierra-21351-123e19ae1f23.herokuapp.com/login">
             <img
               className="box-container"
               src={gitajob}
               alt="Image of 'GitAJob App'"
             />
+            <h5 className="title">GitAJob</h5>
+          </a>
+          <div className="github-link">
+            <a href="https://github.com/rayr482/job-board">
+              <img id="github2" src={github2} alt="GitHub logo" />
+            </a>
           </div>
-        </a>
+          <h6 className="desc">Full-Stack App</h6>
+        </div>
       </div>
+
       <div className="projects">
-        <a
-          className="project-box"
-          href="https://kpl33.github.io/work_day_scheduler/"
-        >
-          <div>
+        <div className="project-box">
+          <a href="https://kpl33.github.io/work_day_scheduler/">
             <img
               className="box-container"
               src={scheduler}
               alt="Image of 'Day Scheduler App'"
             />
+            <h5 className="title">Work Day Scheduler</h5>
+          </a>
+          <div className="github-link">
+            <a href="https://github.com/KPL33/work_day_scheduler">
+              <img id="github2" src={github2} alt="GitHub logo" />
+            </a>
           </div>
-        </a>
-        <a className="project-box" href="https://kpl33.github.io/pwd_gen">
-          <div>
+          <h6 className="desc">Front-End App</h6>
+        </div>
+
+        <div className="project-box">
+          <a href="https://kpl33.github.io/pwd_gen">
             <img
               className="box-container"
               src={pwd}
               alt="Image of 'Random Password Generator App'"
             />
+            <h5 className="title">Password Generator</h5>
+          </a>
+          <div className="github-link">
+            <a href="https://github.com/KPL33/pwd_gen">
+              <img id="github2" src={github2} alt="GitHub logo" />
+            </a>
           </div>
-        </a>
+          <h6 className="desc">Front-End App</h6>
+        </div>
       </div>
+
       <div className="projects">
-      <a className="project-box" href="https://cryptic-everglades-02017-1b72bab49c69.herokuapp.com/">
-          <div>
+        <div className="project-box">
+          <a href="https://cryptic-everglades-02017-1b72bab49c69.herokuapp.com/">
             <img
               className="box-container"
               src={jate}
               alt="Image of 'Just Another Text Editor App'"
             />
+            <h5 className="title">Just Another Text Editor</h5>
+          </a>
+          <div className="github-link">
+            <a href="https://github.com/KPL33/text_editor">
+              <img id="github2" src={github2} alt="GitHub logo" />
+            </a>
           </div>
-        </a>
-        <a className="project-box" className="project-box" href="https://kpl33.github.io/weather_dashboard/">
-          <div>
+          <h6 className="desc">Full-Stack, Desktop & Mobile App</h6>
+        </div>
+
+        <div className="project-box">
+          <a href="https://kpl33.github.io/weather_dashboard/">
             <img
               className="box-container"
               src={weather}
               alt="Image of 'Weather Dashboard App'"
             />
+            <h5 className="title">Weather Dashboard</h5>
+          </a>
+          <div className="github-link">
+            <a href="https://github.com/KPL33/weather_dashboard">
+              <img id="github2" src={github2} alt="GitHub logo" />
+            </a>
           </div>
-        </a>
+          <h6 className="desc">Front-End App</h6>
+        </div>
       </div>
     </main>
   );
