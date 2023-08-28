@@ -1,11 +1,17 @@
-footer {
+#footer {
     background-color: #400303;
-    margin-top: 20px;
+    margin: 20px 0px 0px 0px;
     border-radius: 0.7rem;
+    position: flex-end;
 }
 
-#socials {
+.socials {
     padding: 20px 0px;    
+}
+
+.social-logo:hover  {
+    transition: all ease-in-out 0.5s;
+    transform: scale(1.10);
 }
 
 #leetcode {
