@@ -3,15 +3,14 @@ header {
     width: 100vw;
     background-color: aqua;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#logo-container {
-    max-width: 200px;
-    max-height: 200px;
-    background-color: rgb(1, 89, 60);
-}
-
-#name-box {
+.header-box {
+    background-color: blueviolet;
+    flex-grow: 1;
     margin: 10px;
 }
 
@@ -20,3 +19,13 @@ header {
     color: white;
     font-size: 60px;
 }
+
+/* #logo-box {
+    max-width: 200px;
+    max-height: 200px;
+    background-color: rgb(1, 89, 60);
+}
+
+#name-box {
+    margin: 10px;
+}*/
