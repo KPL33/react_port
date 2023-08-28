@@ -2,31 +2,25 @@
     background-color: #400303;
     display: flex;
     border-radius: 0.7rem;
+    align-items: center;
 }
 
 #pic-box {
     position: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #paragraph-box {
-    margin-top: 50px;
+    margin: 50px;
     width: 70%;
     position: flex-end;
-}
-
-.box {
-    display: inline-block;
-    background-color: grey;
-    height: 250px;
-    margin: 20px;
 }
 
 p {
     color: #eeede6;
     padding: 10px;
     font-size: 24px;
-    font-style: italic;
 }
 
 #profile-pic {

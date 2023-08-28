@@ -1,19 +1,19 @@
 header {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     background-color: #400303;
-    margin: 20px 0px 20px 0px;
+    margin-bottom: 20px;
     border-radius: 0.7rem;
     position: flex-end;
 }
 
 .header-box {
     flex-grow: 1;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
 }
 
@@ -27,6 +27,7 @@ header {
     color: #F4C542;
     font-size: 30px;
     font-family: "Righteous", sans-serif;
+    margin-top: 0px;
 }
 
 #nav {
@@ -35,13 +36,6 @@ header {
     padding: 10px;
     order: 3;
     flex-grow: 1;
-}
-
-#logo {
-    display: flex;
-    align-items: center;
-    background-color: coral;
-    padding: 10px;
 }
 
 #name-webdev {
