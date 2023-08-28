@@ -1,8 +1,23 @@
 .nav-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .link {
-color: black;
-text-decoration: none;
+    font-family: "Righteous", sans-serif;
+    color: #b1b1b1;
+    margin: 0;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.link:hover {
+    color: #edca02;
+    cursor: pointer;
 }
