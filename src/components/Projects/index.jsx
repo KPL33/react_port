@@ -5,6 +5,7 @@ import scheduler from "../../assets/scheduler.png";
 import pwd from "../../assets/pwd.png";
 import jate from "../../assets/jate.png";
 import weather from "../../assets/weather.png";
+import github from "../../assets/Octicons-mark-github.svg";
 export default function Projects() {
   return (
     <main>
@@ -20,6 +21,10 @@ export default function Projects() {
               src={mfc}
               alt="Image of 'Movie Fight Club App'"
             />
+            <h5 className="title">Movie Fight Club</h5>
+            <div className="github-link">
+              <a href="https://github.com/KPL33"><img id="github" src={ github }  alt="GitHub logo" /></a>
+            </div>
           </div>
         </a>
         <a
