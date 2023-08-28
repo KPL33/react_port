@@ -1,7 +1,8 @@
-nav {
-    background-color: #777672;
+.nav-box {
+    display: flex;
 }
 
-h3 {
+.link {
 color: black;
+text-decoration: none;
 }

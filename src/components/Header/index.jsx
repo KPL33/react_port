@@ -5,14 +5,12 @@ import './styles.css';
 export default function Header() {
     return (
         <header>
-            <div className="header-box" id="logo-box">
+            <div className="header-box" id="logo">
                 <p>test</p>
             </div>
-            <div className="header-box" id="name-box">
+            <div className="header-box" id="name-webdev">
                 <h1 id="name">Kevin Lewis</h1>
-            </div>
-            <div className="header-box" id="webdev-box">
-                <h1 id="webdev">Full-Stack Web Developer</h1>
+                <h3 id="webdev">Full-Stack Web Developer</h3>
             </div>
             <div id="nav">
                 <NavBar />

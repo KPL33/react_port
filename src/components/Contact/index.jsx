@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <section>
       <form onSubmit={handleSubmit}>
-        <h3>Contact</h3>
+        <h3 id="contact">Contact</h3>
         <div className="form-outline mb-4">
           <label className="form-label" htmlFor="form4Example1">
             <h4>Name:</h4>
