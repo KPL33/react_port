@@ -88,6 +88,13 @@ main {
 
 }
 
+@media screen and (max-width: 650px) {
+    .github2 {
+      width: 30px;
+      height: auto;
+    }
+  }
+
 .github2:hover {
     box-shadow: 0px 0px 3px 3px white;
 }
