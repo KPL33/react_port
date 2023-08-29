@@ -24,7 +24,7 @@ export default function Projects() {
           </a>
           <div className="github-link">
             <a href="https://github.com/shadowfre4k/Movie-Fight-Club">
-              <img id="github2" src={github2} alt="GitHub logo" />
+              <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
           <h6 className="desc">Front-End App</h6>
@@ -41,7 +41,7 @@ export default function Projects() {
           </a>
           <div className="github-link">
             <a href="https://github.com/rayr482/job-board">
-              <img id="github2" src={github2} alt="GitHub logo" />
+              <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
           <h6 className="desc">Full-Stack App</h6>
@@ -60,7 +60,7 @@ export default function Projects() {
           </a>
           <div className="github-link">
             <a href="https://github.com/KPL33/work_day_scheduler">
-              <img id="github2" src={github2} alt="GitHub logo" />
+              <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
           <h6 className="desc">Front-End App</h6>
@@ -77,7 +77,7 @@ export default function Projects() {
           </a>
           <div className="github-link">
             <a href="https://github.com/KPL33/pwd_gen">
-              <img id="github2" src={github2} alt="GitHub logo" />
+              <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
           <h6 className="desc">Front-End App</h6>
@@ -96,7 +96,7 @@ export default function Projects() {
           </a>
           <div className="github-link">
             <a href="https://github.com/KPL33/text_editor">
-              <img id="github2" src={github2} alt="GitHub logo" />
+              <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
           <h6 className="desc">Full-Stack App</h6>
@@ -113,7 +113,7 @@ export default function Projects() {
           </a>
           <div className="github-link">
             <a href="https://github.com/KPL33/weather_dashboard">
-              <img id="github2" src={github2} alt="GitHub logo" />
+              <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
           <h6 className="desc">Front-End App</h6>

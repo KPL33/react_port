@@ -81,14 +81,14 @@ main {
     transition: opacity 0.30s ease-in-out;
 }
 
-#github2 {
+.github2 {
     width: 90%;
     height: 90%;
     border-radius: 50%;
 
 }
 
-#github2:hover {
+.github2:hover {
     box-shadow: 0px 0px 3px 3px white;
 }
 
