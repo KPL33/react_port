@@ -82,8 +82,8 @@ main {
 }
 
 #github2 {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .project-box:hover .title {
@@ -103,6 +103,7 @@ main {
         visibility: visible;
        opacity: 1;
     }
+
 
     .box-container {
         opacity: 10%;
