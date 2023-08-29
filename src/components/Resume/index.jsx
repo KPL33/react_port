@@ -1,3 +1,4 @@
+//Here, we render our "Resume".
 import resume from "../../assets/kevin_lewis_Resume_2023.pdf"
 
 export default function Resume() {

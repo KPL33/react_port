@@ -1,4 +1,4 @@
-//If there is an error in return appropriate content from the designated route, the user is notified of this.
+//Here, we esablish "error handling".
 import { useRouteError } from 'react-router-dom';
 
 export default function ErrorPage() {

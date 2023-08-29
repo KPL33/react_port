@@ -1,3 +1,5 @@
+//Here, we render our "Projects" page.
+
 import "./styles.css";
 import gitajob from "../../assets/gitajob.png";
 import mfc from "../../assets/mfc.png";
@@ -97,7 +99,7 @@ export default function Projects() {
               <img id="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
-          <h6 className="desc">Full-Stack, Desktop & Mobile App</h6>
+          <h6 className="desc">Full-Stack App</h6>
         </div>
 
         <div className="project-box">

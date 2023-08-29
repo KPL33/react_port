@@ -1,3 +1,4 @@
+//Here, we render the "Nav"igation "Bar", for our "Header".
 import { Link } from 'react-router-dom';
 import './styles.css'
 

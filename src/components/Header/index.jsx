@@ -1,3 +1,4 @@
+//Here, we render our "Header".
 import NavBar from '../NavBar';
 import './styles.css';
 

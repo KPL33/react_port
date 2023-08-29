@@ -1,3 +1,5 @@
+//Here, we render our "Footer".
+
 import './styles.css';
 
 import github from '../../assets/Octicons-mark-github.svg';

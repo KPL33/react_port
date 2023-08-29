@@ -1,3 +1,5 @@
+//Here, we render our "Contact" form. We also validate that user-entered emails are valid.
+
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
@@ -22,7 +24,7 @@ export default function Contact() {
       return;
     }
 
-    // Handle form submission logic here
+  
   };
 
   return (

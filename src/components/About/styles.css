@@ -3,6 +3,9 @@
     display: flex;
     border-radius: 0.7rem;
     align-items: center;
+    @media screen and (max-width: 650px) {
+        flex-direction: column;
+    }
 }
 
 #pic-box {
@@ -26,7 +29,10 @@ p {
 #profile-pic {
 	margin: 20px;
 	border-radius: 50%;
-	width: 170px;
-	height: 200px;
+	width: 238px;
+	height: 280px;
 	box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.25);
+    @media screen and (max-width: 650px) {
+        margin: 40px 0px 0px 0px;
+    }
 }

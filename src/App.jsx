@@ -1,3 +1,5 @@
+//Our "App" file gathers all of the components and renders them on-command.
+
 import { useLocation } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
@@ -27,10 +29,10 @@ export default function App() {
 
   return (
     <>
-      <div className="Portfolio">
-        <Header />
+      <div className="portfolio">
+        <Header id="header-comp"/>
         {currentContent}
-        <Footer />
+        <Footer id="footer-comp"/>
       </div>
     </>
   );

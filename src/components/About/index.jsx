@@ -1,7 +1,7 @@
 import profilepic from '../../assets/gs_no_shad.jpg';
 
 import './styles.css';
-//This shows the contents of our default page-load, the "About".
+//Shows the contents of our "About" page, which also loads as the default.
 export default function About() {
     return (
       <section id="about">
