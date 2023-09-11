@@ -3,7 +3,7 @@
     display: flex;
     border-radius: 0.7rem;
     align-items: center;
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 700px) {
         flex-direction: column;
     }
 }
@@ -24,15 +24,16 @@ p {
     color: #eeede6;
     padding: 10px;
     font-size: 24px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #profile-pic {
-	margin: 20px;
+	margin: 40px;
 	border-radius: 50%;
 	width: 238px;
 	height: 280px;
 	box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.25);
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 700px) {
         margin: 40px 0px 0px 0px;
     }
 }

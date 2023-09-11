@@ -11,7 +11,7 @@ export default function About() {
 
         <div id="paragraph-box">
           <p>
-        I have over 23 years of experience in the industries of Design and Publishing. For the past 15+ years, I served as Production Manager for Publishers' Development Corporation. Due to budget cuts, my role was absorbed and I am looking for a new opportunity to contribute to the bright future of a stable company.
+          I am a graduate of UCSD's full-stack web development program and have over 23 years of experience in the industries of Design and Publishing. I hope you enjoy the various projects that I'm showcasing here. I am actively seeking work and always looking to network and collaborate with like-minded, motivated developers. Enjoy, and contact me, should you have any questions on my work or background!
           </p>
         </div>   
       </section>
