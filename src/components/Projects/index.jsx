@@ -2,6 +2,7 @@
 
 import "./styles.css";
 import gitajob from "../../assets/gitajob.png";
+import shoes from "../../assets/npm_shoes.png";
 import mfc from "../../assets/mfc.png";
 import scheduler from "../../assets/scheduler.png";
 import pwd from "../../assets/pwd.png";
@@ -86,6 +87,23 @@ export default function Projects() {
 
       <div className="projects">
         <div className="project-box">
+          <a href="https://quiet-wave-07026-0aa4799b37aa.herokuapp.com/">
+            <img
+              className="box-container"
+              src={shoes}
+              alt="Image of 'NPM Shoes' App'"
+            />
+            <h5 className="title">NPM Shoes</h5>
+          </a>
+          <div className="github-link">
+            <a href="https://github.com/SixFourDev/npm-run-start">
+              <img className="github2" src={github2} alt="GitHub logo" />
+            </a>
+          </div>
+          <h6 className="desc">Full-Stack App</h6>
+        </div>
+
+        <div className="project-box">
           <a href="https://cryptic-everglades-02017-1b72bab49c69.herokuapp.com/">
             <img
               className="box-container"
@@ -99,10 +117,10 @@ export default function Projects() {
               <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
-          <h6 className="desc">Full-Stack App</h6>
+          <h6 className="desc">PWA App</h6>
         </div>
 
-        <div className="project-box">
+        {/* <div className="project-box">
           <a href="https://kpl33.github.io/weather_dashboard/">
             <img
               className="box-container"
@@ -117,7 +135,7 @@ export default function Projects() {
             </a>
           </div>
           <h6 className="desc">Front-End App</h6>
-        </div>
+        </div> */}
       </div>
     </main>
   );
