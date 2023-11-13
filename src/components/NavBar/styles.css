@@ -7,12 +7,16 @@
     }
 }
 
+.nav-link.active .link {
+    color: #edca02;
+}
+
 .link {
     font-family: "Righteous", sans-serif;
-    color: #b1b1b1;
+    color: lightgray;
     margin: 0;
     padding: 10px;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .nav-link {
@@ -22,6 +26,8 @@
 }
 
 .link:hover {
-    color: #edca02;
+    color: white;
     cursor: pointer;
+    transform: scale(1.20);
+    transition: all ease-in-out 0.15s;
 }

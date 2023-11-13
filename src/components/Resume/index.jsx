@@ -1,10 +1,14 @@
 //Here, we render our "Resume".
-import resume from "../../assets/Kevin_Lewis_FS_Resume_2023.pdf"
+import "./styles.css";
+import resume from "../../assets/Kevin_Lewis_Dev_Resume_10-2023.pdf"
 
 export default function Resume() {
     return (
-      <div>
-        <iframe src={ resume } width="100%" height="1000px" title="Resume"></iframe>
-      </div>
+      <iframe
+        src={`${resume}#zoom=180`}
+        width="100%"
+        height="100%"
+        title="Resume"
+      ></iframe>
     );
 }

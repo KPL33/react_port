@@ -1,14 +1,15 @@
 header {
     width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-color: #400303;
-    margin-bottom: 50px;
+    background-color: var(--burgundy);;
+
     border-radius: 0.7rem;
-    position: flex-end;
+    position: flex-start;
 }
 
 .header-box {
@@ -20,12 +21,12 @@ header {
 #name {
     font-family: "Nothing You Could Do", sans-serif;
     color: white;
-    font-size: 60px;
+    font-size: 80px;
 }
 
 #webdev {
-    color: #F4C542;
-    font-size: 30px;
+    color: var(--yellow);
+    font-size: 40px;
     font-family: "Righteous", sans-serif;
     margin-top: 0px;
 }

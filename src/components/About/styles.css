@@ -1,39 +1,69 @@
 #about {
-    background-color: #400303;
+    background-color: var(--burgundy);
     display: flex;
     border-radius: 0.7rem;
-    align-items: center;
-    @media screen and (max-width: 700px) {
-        flex-direction: column;
-    }
+    height: auto;
+    margin-bottom: 100px;
 }
 
 #pic-box {
-    position: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+    margin: 200px 50px 0 50px; /* Adjusted margin-top to 200px */
 }
 
 #paragraph-box {
-    margin: 50px;
-    width: 70%;
-    position: flex-end;
+    flex: 1; /* Use flex to allow the paragraph box to take more space */
+    padding: 40px 60px 40px 0px;
+}
+
+.snark {
+    margin-top: 50px;
+    color: var(--yellow);
+    font-size: 40px;
+    font-family: "Nothing You Could Do", sans-serif;
+}
+
+.snark, p {
+    text-align: left;
 }
 
 p {
-    color: #eeede6;
+    text-indent: 1em;
+    color: white;
     padding: 10px;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
 }
 
 #profile-pic {
-	margin: 40px;
-	border-radius: 50%;
-	width: 238px;
-	height: 280px;
-	box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.25);
-    @media screen and (max-width: 700px) {
-        margin: 40px 0px 0px 0px;
+    border-radius: 50%;
+    width: 100%;
+    height: 420px;
+    box-shadow: 0 4px 6px 0 #333;
+}
+
+@media screen and (max-width: 900px) {
+    #about {
+        margin-top: 120px;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+
+    }
+
+    #pic-box {
+    margin: 50px; /* Adjusted margin-top to 200px */
+    }
+
+    
+    p {
+        padding: 40px;
+    }
+
+    .snark {
+        text-align: center;
+    }
+
+    #paragraph-box {
+        padding: 10px;
     }
 }

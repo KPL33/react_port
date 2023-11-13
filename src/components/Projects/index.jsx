@@ -5,7 +5,7 @@ import gitajob from "../../assets/gitajob.png";
 import shoes from "../../assets/npm_shoes.png";
 import mfc from "../../assets/mfc.png";
 import scheduler from "../../assets/scheduler.png";
-import pwd from "../../assets/pwd.png";
+import pwd from "../../assets/passfinder.png";
 import jate from "../../assets/jate.png";
 import weather from "../../assets/weather.png";
 import github2 from "../../assets/Octicons-mark-github.svg";
@@ -28,7 +28,7 @@ export default function Projects() {
               <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
-          <h6 className="desc">Front-End App</h6>
+          <h6 className="desc">Front-End App that compares Rotten Tomatoes scores.</h6>
         </div>
 
         <div className="project-box">
@@ -45,7 +45,7 @@ export default function Projects() {
               <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
-          <h6 className="desc">Full-Stack App</h6>
+          <h6 className="desc">Full-Stack Job-Search App</h6>
         </div>
       </div>
 
@@ -68,20 +68,20 @@ export default function Projects() {
         </div>
 
         <div className="project-box">
-          <a href="https://kpl33.github.io/pwd_gen">
+          <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
             <img
               className="box-container"
               src={pwd}
               alt="Image of 'Random Password Generator App'"
             />
-            <h5 className="title">Password Generator</h5>
+            <h5 className="title">PassFinder</h5>
           </a>
           <div className="github-link">
-            <a href="https://github.com/KPL33/pwd_gen">
+            <a href="https://github.com/KPL33/passfinder">
               <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
-          <h6 className="desc">Front-End App</h6>
+          <h6 className="desc">Front-End App for generating random passwords.</h6>
         </div>
       </div>
 
@@ -100,7 +100,7 @@ export default function Projects() {
               <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
-          <h6 className="desc">Full-Stack App</h6>
+          <h6 className="desc">Full-Stack E-Commerce App</h6>
         </div>
 
         <div className="project-box">
@@ -110,14 +110,14 @@ export default function Projects() {
               src={jate}
               alt="Image of 'Just Another Text Editor App'"
             />
-            <h5 className="title">Just Another Text Editor</h5>
+            <h5 className="title">J.A.T.E.</h5>
           </a>
           <div className="github-link">
             <a href="https://github.com/KPL33/text_editor">
               <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
-          <h6 className="desc">PWA App</h6>
+          <h6 className="desc">PWA Text Editing App</h6>
         </div>
 
         {/* <div className="project-box">

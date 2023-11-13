@@ -8,7 +8,7 @@ import leetcode from '../../assets/leetcode_logo.svg';
 //This shows the contents of our static "Footer".
 export default function Footer() {
   return (
-    <footer id="footer">
+    <footer>
       <div className="socials">
         <a href="https://www.linkedin.com/in/kevin-lewis92126"><img id="linkedin" className="social-logo" src={ linkedin } alt="LinkedIn logo" /></a>
         <a href="https://github.com/KPL33"><img id="github" className="social-logo" src={ github }  alt="GitHub logo" /></a>

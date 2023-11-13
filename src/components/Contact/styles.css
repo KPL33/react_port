@@ -1,51 +1,57 @@
-.form-label {
+/* Add your existing CSS styles here */
 
-    display: block;
-    margin-bottom: 10px;
+.form-label {
+  display: block;
+  margin-bottom: 10px;
 }
 
 #contact {
-    text-align: left;
-    color: white;
-    margin-bottom: 20px;
-    font-size: 30px;
+  text-align: left;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 40px;
 }
 
 .field-titles {
-    color: #F4C542;
-    font-family: "Nothing You Could Do", sans-serif;
-    margin-top: 0;
-    font-weight: bold;
-    text-align: left;
-    display: block;
-    margin-bottom: 10px;
+  color: var(--yellow);
+  font-size: 35px;
+  font-family: "Nothing You Could Do", sans-serif;
+  margin-top: 0;
+  text-align: left;
+  display: block;
+  margin-bottom: 10px;
 }
 
 #send {
-    margin: 10px;
-    color: #400303;
-    margin: 0px;
-    font-size: 20px;
+  margin: 10px;
+  color: var(--burgundy);
+  margin: 0px;
+  font-size: 20px;
 }
 
-#contact, #send {
-    font-family: "Righteous", sans-serif;
+#contact,
+#send {
+  font-family: "Righteous", sans-serif;
 }
 
 form {
-    background-color: #400303;
-    padding: 1rem;
-    border-radius: 0.7rem;
+  position: relative;
+  margin: 200px auto;
+  margin-bottom: 500px;
+  background-color: var(--burgundy);
+  padding: 1rem;
+  border-radius: 0.7rem;
+  max-width: 80%;
 }
 
 .btn.btn-primary.btn-block.mb-4 {
-    background-color: #F4C542;
-    border-color: white;
+  background-color: #f4c542;
+  border-color: white;
 }
 
 .btn.btn-primary.btn-block.mb-4:hover {
-    background-color: #400303;
-    #send {
-        color:white;
-    }
+  background-color: var(--burgundy);
+  #send {
+    color: white;
+  }
 }
