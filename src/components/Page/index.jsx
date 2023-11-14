@@ -1,4 +1,3 @@
-import React from "react";
 import { useLocation } from "react-router-dom";
 import About from "../About"; // Adjust the path accordingly
 import Projects from "../Projects"; // Adjust the path accordingly

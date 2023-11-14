@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
@@ -7,7 +7,6 @@ export default function Contact() {
   const [isValidEmail, setIsValidEmail] = useState(true);
   const [message, setMessage] = useState("");
 
-  const emailRef = useRef(null);
   const messageRef = useRef(null);
 
   useEffect(() => {
@@ -43,13 +42,18 @@ export default function Contact() {
 
   return (
     <section>
-      <form onSubmit={handleSubmit}>
+      <form name="contact" netlify="true" onSubmit={handleSubmit}>
         <h3 id="contact">Contact</h3>
         <div className="form-outline mb-4">
           <label className="form-label" htmlFor="form4Example1">
             <h4 className="field-titles">Name:</h4>
           </label>
-          <input type="text" id="form4Example1" className="form-control" />
+          <input
+            type="text"
+            name="name"
+            id="form4Example1"
+            className="form-control"
+          />
         </div>
 
         <div className="form-outline mb-4">
@@ -58,6 +62,7 @@ export default function Contact() {
           </label>
           <input
             type="email"
+            name="email"
             id="form4Example2"
             className={`form-control ${!isValidEmail ? "is-invalid" : ""}`}
             value={email}
@@ -75,6 +80,7 @@ export default function Contact() {
             <h4 className="field-titles">Message:</h4>
           </label>
           <textarea
+            name="message"
             className="form-control"
             id="form4Example3"
             rows="4"
