@@ -31,35 +31,14 @@ export default function Contact() {
     textarea.style.height = textarea.scrollHeight + "px";
   };
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
 
     if (!isValidEmail) {
       alert("Invalid email address");
       return;
     }
-
-    try {
-      const formData = new FormData(event.target);
-      const response = await fetch("/", {
-        method: "POST",
-        body: formData,
-      });
-
-      if (response.ok) {
-        alert("Form submitted successfully!");
-        // Optionally, reset the form fields after successful submission
-        setEmail("");
-        setMessage("");
-      } else {
-        throw new Error("Form submission failed!");
-      }
-    } catch (error) {
-      console.error("Form submission error:", error);
-      alert("Form submission failed. Please try again.");
-    }
   };
-
 
   return (
     <section>
