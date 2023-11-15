@@ -1,13 +1,9 @@
 import React from 'react';
-// import { useState, useRef, useEffect } from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "./styles.css";
 
 export default function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
   };
-
 
   return (
     <div>
@@ -15,9 +11,15 @@ export default function Contact() {
         name="contact v1"
         method="post"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact v1" />
+        <div style={{ display: "none" }}>
+          <label>
+            Do not fill this out if you are human: <input name="bot-field" />
+          </label>
+        </div>
 
         <div>
           <label>
@@ -28,13 +30,13 @@ export default function Contact() {
 
         <div>
           <label htmlFor="email">Email:</label> <br />
-            <input id="email"type="email" name="email" />
+          <input id="email" type="email" name="email" />
         </div>
 
         <div>
-          <label>Message: <br />
+          <label>
+            Message: <br />
             <textarea name="message"></textarea>
-
           </label>
         </div>
 
