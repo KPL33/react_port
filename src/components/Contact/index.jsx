@@ -42,7 +42,13 @@ export default function Contact() {
 
   return (
     <section>
-      <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        onSubmit={handleSubmit}
+      >
+        <input type="hidden" name="form-name" value="contact" />
         <h3 id="contact">Contact</h3>
         <div className="form-outline mb-4">
           <label className="form-label" htmlFor="form4Example1">
