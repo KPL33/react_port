@@ -4,13 +4,18 @@ import React from 'react';
 // import "./styles.css";
 
 export default function Contact() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
+
   return (
     <div>
       <form
         name="contact v1"
         method="post"
         data-netlify="true"
-        onSubmit="submit"
+        onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact v1" />
 
