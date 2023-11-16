@@ -7,10 +7,12 @@
 }
 
 #pic-box {
-  margin:50px; /* Adjusted margin-top to 200px */
+  margin: 0;
+
 }
 
 #profile-pic {
+  margin-left: 20px;
   border-radius: 50%;
   width: 260px;
   height: 315px;
@@ -73,7 +75,11 @@
   }
 
   #pic-box {
-    margin: 50px; /* Adjusted margin-top to 200px */
+    margin: 20px 0px 0px 0px;
+  }
+  #profile-pic {
+    width: 143px; /* Change this value to your desired width */
+    height: 172px; /* Change this value to your desired height */
   }
 
   .paragraph {
@@ -89,5 +95,12 @@
 
   #paragraph-box-1 {
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #profile-pic {
+    width: 115px;
+    height: 137px;
   }
 }

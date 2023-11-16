@@ -1,4 +1,9 @@
-iframe {
-    max-width: 90%;
-    height: 100vh;
+.resume {
+    max-width: 100%;
+}
+
+.resume img {
+    width: 100%;
+    height: auto;
+    max-width: 1400px;
 }

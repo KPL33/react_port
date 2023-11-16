@@ -34,3 +34,25 @@ header {
   flex-direction: column;
   align-items: center;
 }
+
+@media screen and (max-width: 800px) {
+  #name {
+    font-size: 60px; /* Adjust font size for smaller screens */
+  }
+
+  #webdev {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #name {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  #webdev {
+    font-size: 15px;
+    margin: 0;
+  }
+}

@@ -14,13 +14,22 @@ import checkmateThumb from "../../assets/checkmate_thumb.jpg";
 // import checkmatePrev from "../../assets/checkmate_prev.jpg";
 import geminiThumb from "../../assets/gemini_thumb.jpg";
 // import geminiPrev from "../../assets/gemini_prev.jpg";
+import twitThumb from "../../assets/fmg_twitter_thumb.jpg";
+// import twitPrev from "../../assets/fmg_twitter_prev.jpg";
+import battlecompThumb from "../../assets/battlecomp_thumb.jpg";
+// import battlecompPrev from "../../assets/battlecomp_prev.jpg";
+import diamondOneThumb from "../../assets/diamond1_thumb.jpg";
+// import diamondOnePrev from "../../assets/diamond1_prev.jpg";
+import diamondTwoThumb from "../../assets/diamond2_thumb.jpg";
+// import diamondTwoPrev from "../../assets/diamond2_prev.jpg";
+
 
 export default function Projects() {
   return (
-    <div className="projects-page-box box">
+    <div className="projects-page-box">
       <h3 className="intro">Apps</h3>
-      <div className="projects">
-        <div className="project-box">
+      <div id="apps-section">
+        <div className="app-box">
           <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
             <img
               className="box-container"
@@ -38,7 +47,7 @@ export default function Projects() {
             Front-End App for generating random passwords.
           </h6>
         </div>
-        <div className="project-box">
+        <div className="app-box">
           <a href="https://shadowfre4k.github.io/Movie-Fight-Club/">
             <img
               className="box-container"
@@ -57,7 +66,7 @@ export default function Projects() {
           </h6>
         </div>
 
-        <div className="project-box">
+        <div className="app-box">
           <a href="https://murmuring-sierra-21351-123e19ae1f23.herokuapp.com/login">
             <img
               className="box-container"
@@ -74,7 +83,7 @@ export default function Projects() {
           <h6 className="desc">Full-Stack Job-Search App</h6>
         </div>
 
-        <div className="project-box">
+        <div className="app-box">
           <a href="https://kpl33.github.io/work_day_scheduler/">
             <img
               className="box-container"
@@ -90,7 +99,7 @@ export default function Projects() {
           </div>
           <h6 className="desc">Front-End App</h6>
         </div>
-        <div className="project-box">
+        <div className="app-box">
           <a href="https://quiet-wave-07026-0aa4799b37aa.herokuapp.com/">
             <img
               className="box-container"
@@ -107,7 +116,7 @@ export default function Projects() {
           <h6 className="desc">Full-Stack E-Commerce App</h6>
         </div>
 
-        <div className="project-box">
+        <div className="app-box">
           <a href="https://cryptic-everglades-02017-1b72bab49c69.herokuapp.com/">
             <img
               className="box-container"
@@ -125,12 +134,12 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="projects-page-box box" id="ad-section">
+      <div className="projects-page-box">
         <h3 className="intro">Ad Design</h3>
-        <div className="projects" id="ads">
+        <div id="ad-section">
           <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
             <img
-              className="fp"
+              className="ad fp"
               src={checkmateThumb}
               alt="Image of 'Checkmate'ad"
             />
@@ -138,9 +147,49 @@ export default function Projects() {
 
           <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
             <img
-              className="1-6vt"
+              className="ad 1-6vt"
               src={geminiThumb}
               alt="Image of 'Gemini Customs' ad"
+            />
+          </a>
+
+          <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
+            <img
+              className="ad 1-2hz"
+              src={twitThumb}
+              alt="Image of 'FMG Twitter' ad"
+            />
+          </a>
+
+          <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
+            <img
+              className="ad fp"
+              src={battlecompThumb}
+              alt="Image of 'Battle Comp' ad"
+            />
+          </a>
+
+          <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
+            <img
+              className="ad fp"
+              src={diamondOneThumb}
+              alt="Image of 'Diamond D Custom Leather' ad, version 1"
+            />
+          </a>
+
+          <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
+            <img
+              className="ad fp"
+              src={diamondTwoThumb}
+              alt="Image of 'Diamond D Custom Leather' ad, version 2"
+            />
+          </a>
+
+          <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
+            <img
+              className="ad fp"
+              src={diamondTwoThumb}
+              alt="Image of 'Diamond D Custom Leather' ad, version 2"
             />
           </a>
         </div>

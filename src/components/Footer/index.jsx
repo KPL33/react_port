@@ -17,14 +17,18 @@ export default function Footer() {
   return (
     <footer id="contact-section" className="box">
       <div id="email-container">
-        <a id="email-link" href={`mailto:${emailAddress}`} onClick={handleEmailClick}>
+        <a
+          id="email-link"
+          href={`mailto:${emailAddress}`}
+          onClick={handleEmailClick}
+        >
           <img
             id="email"
             className="social-logo"
             src={email}
             alt="Email icon"
           />
-          <p id="email-address">kevdev@yahoo.com</p>
+          <p id="email-address">kevdev@myyahoo.com</p>
         </a>
       </div>
       <div className="socials">
@@ -53,8 +57,8 @@ export default function Footer() {
           />
         </a>
       </div>
-      <div>
-        <p id="madewith">
+      <div id="madewith">
+        <p>
           This site made with &nbsp; <img id="react-logo" src={reactLogo} />{" "}
           &nbsp; by Kevin Lewis
         </p>

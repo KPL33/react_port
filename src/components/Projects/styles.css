@@ -1,10 +1,39 @@
 .projects-page-box {
-  padding: 10px;
   height: auto;
 }
 
+#apps-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#apps-section,
 #ad-section {
-  margin-top: 10px;
+  border-radius: 1em;
+  background-color: var(--main);
+  margin: 20px 0px;
+}
+
+#ad-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad {
+  margin: 10px 30px 20px 30px;
+  justify-self: center;
 }
 
 .intro {
@@ -33,25 +62,9 @@
   display: block;
 }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 100%;
-  height: auto;
-  background-color: var(--main);
-  margin: 20px 0px;
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 /* Need to rename .projects to "apps" or something, because that's what those styles mainly deal with. Then be sure to transfer appropriate styles to the "apps" and "ads" ids. */
 
-
-.project-box {
+.app-box {
   position: relative;
   margin: 20px 0px;
 }
@@ -76,7 +89,7 @@
   top: 80%;
   left: 50%;
   font-size: 20px;
-  color: #edca02;
+  color: var(--accent);
 }
 
 .github-link {
@@ -97,14 +110,6 @@
   border-radius: 50%;
 }
 
-#ads {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 12 columns */
-  grid-template-rows: repeat(5, auto); /* 5 rows */
-  gap: 10px; /* Gap between grid items */
-  margin-top: 20px; /* Adjust margin as needed */
-}
-
 @media screen and (max-width: 600px) {
   .github2 {
     width: 50px;
@@ -116,7 +121,7 @@
   box-shadow: 0px 0px 3px 3px white;
 }
 
-.project-box:hover .title {
+.app-box:hover .title {
   opacity: 1;
 }
 
@@ -124,7 +129,8 @@
   opacity: 10%;
 }
 
-.project-box:hover {
+.app-box:hover,
+.ad:hover {
   box-shadow: 0px 0px 5px 5px white;
   transition: all ease-in-out 0.3s;
   transform: scale(1.02);
@@ -138,5 +144,13 @@
 
   .box-container {
     opacity: 10%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .box-container {
+    width: 180px;
+    height: 180px;
+    margin: 10px;
   }
 }
