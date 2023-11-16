@@ -10,6 +10,15 @@ export default function NavBar() {
     setActiveLink(location.pathname);
   }, [location]);
 
+  const handleContactClick = (event) => {
+    event.preventDefault();
+    
+    const footer = document.getElementById("contact-section");
+    if (footer) {
+      footer.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="nav-box">
       <Link
@@ -33,8 +42,16 @@ export default function NavBar() {
       >
         <h3 className="link">Resume</h3>
       </Link>
+      {/* <Link
+        to="/Contact"
+        className={`nav-link ${activeLink === "/Contact" ? "active" : ""}`}
+        alt="Links to the 'Contact' section."
+      >
+        <h3 className="link">Contact</h3>
+      </Link> */}
       <Link
         to="/Contact"
+        onClick={handleContactClick}
         className={`nav-link ${activeLink === "/Contact" ? "active" : ""}`}
         alt="Links to the 'Contact' section."
       >

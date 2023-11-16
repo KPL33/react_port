@@ -1,17 +1,19 @@
 :root {
   text-align: center;
-  --yellow: #F4C542;
-  --burgundy: #400303;
-
+  --accent: #f4c542;
+  --main: #400303;
+  --bgrnd: #1f1c1c;
 }
-
-/* .portfolio {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-} */
 
 #footer-comp {
   position: fixed;
+}
 
+.box, .projects {
+  border-radius: 1em;
+  
+}
+
+.portfolio {
+  background-color: var(--bgrnd);
 }

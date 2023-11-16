@@ -7,13 +7,37 @@ import mfc from "../../assets/mfc.png";
 import scheduler from "../../assets/scheduler.png";
 import pwd from "../../assets/passfinder.png";
 import jate from "../../assets/jate.png";
-import weather from "../../assets/weather.png";
+// import weather from "../../assets/weather.png";
 import github2 from "../../assets/Octicons-mark-github.svg";
+
+import checkmateThumb from "../../assets/checkmate_thumb.jpg";
+// import checkmatePrev from "../../assets/checkmate_prev.jpg";
+import geminiThumb from "../../assets/gemini_thumb.jpg";
+// import geminiPrev from "../../assets/gemini_prev.jpg";
+
 export default function Projects() {
   return (
-    <main>
-      <h3 className="intro">My Projects</h3>
+    <div className="projects-page-box box">
+      <h3 className="intro">Apps</h3>
       <div className="projects">
+        <div className="project-box">
+          <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
+            <img
+              className="box-container"
+              src={pwd}
+              alt="Image of 'Random Password Generator App'"
+            />
+            <h5 className="title">PassFinder</h5>
+          </a>
+          <div className="github-link">
+            <a href="https://github.com/KPL33/passfinder">
+              <img className="github2" src={github2} alt="GitHub logo" />
+            </a>
+          </div>
+          <h6 className="desc">
+            Front-End App for generating random passwords.
+          </h6>
+        </div>
         <div className="project-box">
           <a href="https://shadowfre4k.github.io/Movie-Fight-Club/">
             <img
@@ -28,7 +52,9 @@ export default function Projects() {
               <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
-          <h6 className="desc">Front-End App that compares Rotten Tomatoes scores.</h6>
+          <h6 className="desc">
+            Front-End App that compares Rotten Tomatoes scores.
+          </h6>
         </div>
 
         <div className="project-box">
@@ -47,9 +73,7 @@ export default function Projects() {
           </div>
           <h6 className="desc">Full-Stack Job-Search App</h6>
         </div>
-      </div>
 
-      <div className="projects">
         <div className="project-box">
           <a href="https://kpl33.github.io/work_day_scheduler/">
             <img
@@ -66,26 +90,6 @@ export default function Projects() {
           </div>
           <h6 className="desc">Front-End App</h6>
         </div>
-
-        <div className="project-box">
-          <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
-            <img
-              className="box-container"
-              src={pwd}
-              alt="Image of 'Random Password Generator App'"
-            />
-            <h5 className="title">PassFinder</h5>
-          </a>
-          <div className="github-link">
-            <a href="https://github.com/KPL33/passfinder">
-              <img className="github2" src={github2} alt="GitHub logo" />
-            </a>
-          </div>
-          <h6 className="desc">Front-End App for generating random passwords.</h6>
-        </div>
-      </div>
-
-      <div className="projects">
         <div className="project-box">
           <a href="https://quiet-wave-07026-0aa4799b37aa.herokuapp.com/">
             <img
@@ -119,24 +123,28 @@ export default function Projects() {
           </div>
           <h6 className="desc">PWA Text Editing App</h6>
         </div>
-
-        {/* <div className="project-box">
-          <a href="https://kpl33.github.io/weather_dashboard/">
-            <img
-              className="box-container"
-              src={weather}
-              alt="Image of 'Weather Dashboard App'"
-            />
-            <h5 className="title">Weather Dashboard</h5>
-          </a>
-          <div className="github-link">
-            <a href="https://github.com/KPL33/weather_dashboard">
-              <img className="github2" src={github2} alt="GitHub logo" />
-            </a>
-          </div>
-          <h6 className="desc">Front-End App</h6>
-        </div> */}
       </div>
-    </main>
+
+      <div className="projects-page-box box" id="ad-section">
+        <h3 className="intro">Ad Design</h3>
+        <div className="projects" id="ads">
+          <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
+            <img
+              className="fp"
+              src={checkmateThumb}
+              alt="Image of 'Checkmate'ad"
+            />
+          </a>
+
+          <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
+            <img
+              className="1-6vt"
+              src={geminiThumb}
+              alt="Image of 'Gemini Customs' ad"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }

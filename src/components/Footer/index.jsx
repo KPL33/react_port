@@ -1,15 +1,32 @@
 //Here, we render our "Footer".
 
 import './styles.css';
-
+import email from "../../assets/email.svg";
 import github from '../../assets/Octicons-mark-github.svg';
 import linkedin from '../../assets/LI-In-Bug.svg';
 import leetcode from '../../assets/leetcode_logo.svg';
 import reactLogo from '../../assets/react.png';
-//This shows the contents of our static "Footer".
+
+
 export default function Footer() {
+  const emailAddress="kevdev@myyahoo.com";
+
+  const handleEmailClick = () => {
+    window.location.href = `mailto:${emailAddress}`;
+  }
   return (
-    <footer>
+    <footer id="contact-section" className="box">
+      <div id="email-container">
+        <a id="email-link" href={`mailto:${emailAddress}`} onClick={handleEmailClick}>
+          <img
+            id="email"
+            className="social-logo"
+            src={email}
+            alt="Email icon"
+          />
+          <p id="email-address">kevdev@yahoo.com</p>
+        </a>
+      </div>
       <div className="socials">
         <a href="https://www.linkedin.com/in/kevin-lewis92126">
           <img
@@ -38,8 +55,8 @@ export default function Footer() {
       </div>
       <div>
         <p id="madewith">
-          This site made with &nbsp; <img id="react-logo" src={reactLogo} /> &nbsp; by
-          Kevin Lewis
+          This site made with &nbsp; <img id="react-logo" src={reactLogo} />{" "}
+          &nbsp; by Kevin Lewis
         </p>
       </div>
     </footer>

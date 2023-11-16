@@ -1,58 +1,97 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--burgundy);
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.7rem;
-    width: 100%;
-    bottom: 0;
-    height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  background-color: var(--main);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  height: auto;
 }
 
 .socials {
-    padding-top: 20px;
+  padding: 20px;
 }
 
-.social-logo:hover  {
-    transition: all ease-in-out 0.25s;
-    transform: scale(1.20);
+.social-logo:hover {
+  transition: all ease-in-out 0.25s;
+  transform: scale(1.2);
 }
 
-#leetcode {
-    margin-left: 50px;
+.social-logo {
+  margin: 0px 20px;
+}
+
+#email-container {
+  margin-top: 30px;
+}
+
+#email {
+  width: 85px;
+  height: 67px;
+}
+
+#email-link {
+  text-decoration: none;
+}
+
+#email-address {
+  color: var(--accent);
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 #github {
-    width: 80px;
-    height: 80px;
-
+  width: 80px;
+  height: 80px;
 }
+
 #leetcode {
-    width: 70px;
-    height: 80px;
+  width: 70px;
+  height: 80px;
 }
 
 #linkedin {
-    width: 90px;
-    height: 90px;
-    margin-right: 50px;
+  width: 90px;
+  height: 90px;
 }
 
 #madewith {
-    color: white;
-    font-size: 18px;
-    padding-bottom: 20px;
-    text-align: center;
+  color: white;
+  font-size: 18px;
+  margin-top: 10px 0px 20px 20px;
+  text-align: center;
 }
 
 #react-logo {
-    width: 40%;
-    height: 40%;
+  width: 40%;
+  height: 40%;
 }
 
-@media screen and (max-width: 800px) {
-    footer, #linkedin, #github, #leetcode {
-      height: auto;
-    }
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+  }
+
+  #email-container {
+  margin-top: 10px;
+  }
+
+  footer,
+  #linkedin,
+  #github,
+  #leetcode {
+    height: 25%;
+    height: 25%;
+  }
+
+  #madewith {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+  padding: 0px;
+}
 }
