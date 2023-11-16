@@ -2,9 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: 440px) {
-        flex-direction: column;
-    }
 }
 
 #nav {
@@ -28,12 +25,12 @@
 
     @media screen and (max-width: 800px) {
         font-size: 20px;
-        padding: 0px 12px;
+        padding: 12px;
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 445px) {
         font-size: 12px;
-        padding: 0;
+        padding: 6px;
     }
 }
 
