@@ -115,6 +115,18 @@
     width: 50px;
     height: auto;
   }
+
+  .title {
+  top: 30%;
+  left: 40%;
+  font-size: 24px;
+  }
+
+  .desc {
+    font-size: 16px;
+    bottom: -40px;
+  }
+
 }
 
 .github2:hover {
