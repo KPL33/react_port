@@ -1,5 +1,3 @@
-//Here, we render our "Projects" page.
-
 import "./styles.css";
 import gitajob from "../../assets/gitajob.png";
 import shoes from "../../assets/npm_shoes.png";
@@ -44,7 +42,7 @@ export default function Projects() {
             </a>
           </div>
           <h6 className="desc">
-            Front-End App for generating random passwords.
+            Front-End App. Generates passwords.
           </h6>
         </div>
         <div className="app-box">
@@ -62,7 +60,7 @@ export default function Projects() {
             </a>
           </div>
           <h6 className="desc">
-            Front-End App that compares Rotten Tomatoes scores.
+            Front-End App. Compares Rotten Tomatoes scores.
           </h6>
         </div>
 
@@ -80,7 +78,11 @@ export default function Projects() {
               <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
-          <h6 className="desc">Full-Stack Job-Search App</h6>
+          <h6 className="desc">
+            Full-Stack,
+            <br />
+            Job-Search App.
+          </h6>
         </div>
 
         <div className="app-box">
@@ -97,7 +99,7 @@ export default function Projects() {
               <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
-          <h6 className="desc">Front-End App</h6>
+          <h6 className="desc">Front-End App.</h6>
         </div>
         <div className="app-box">
           <a href="https://quiet-wave-07026-0aa4799b37aa.herokuapp.com/">
@@ -113,7 +115,11 @@ export default function Projects() {
               <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
-          <h6 className="desc">Full-Stack E-Commerce App</h6>
+          <h6 className="desc">
+            Full-Stack,
+            <br />
+            E-Commerce App.
+          </h6>
         </div>
 
         <div className="app-box">
@@ -130,7 +136,11 @@ export default function Projects() {
               <img className="github2" src={github2} alt="GitHub logo" />
             </a>
           </div>
-          <h6 className="desc">PWA Text Editing App</h6>
+          <h6 className="desc">
+            PWA App for
+            <br />
+            Text Editing
+          </h6>
         </div>
       </div>
 
