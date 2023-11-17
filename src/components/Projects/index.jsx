@@ -147,7 +147,7 @@ export default function Projects() {
 
           <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
             <img
-              className="ad 1-6vt"
+              className="ad one-sixth-vt"
               src={geminiThumb}
               alt="Image of 'Gemini Customs' ad"
             />
@@ -155,7 +155,7 @@ export default function Projects() {
 
           <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
             <img
-              className="ad 1-2hz"
+              className="ad one-half-hz"
               src={twitThumb}
               alt="Image of 'FMG Twitter' ad"
             />
@@ -174,14 +174,6 @@ export default function Projects() {
               className="ad fp"
               src={diamondOneThumb}
               alt="Image of 'Diamond D Custom Leather' ad, version 1"
-            />
-          </a>
-
-          <a href="https://candid-snickerdoodle-e60aa3.netlify.app/">
-            <img
-              className="ad fp"
-              src={diamondTwoThumb}
-              alt="Image of 'Diamond D Custom Leather' ad, version 2"
             />
           </a>
 
