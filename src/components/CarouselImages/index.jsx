@@ -2,8 +2,8 @@ import battleCompPrev from "../../assets/battlecomp_prev.jpg";
 import checkmatePrev from "../../assets/checkmate_prev.jpg";
 import diamondOnePrev from "../../assets/diamond1_prev.jpg";
 import diamondTwoPrev from "../../assets/diamond2_prev.jpg";
-import geminiPrev from "../../assets/gemini_prev.jpg";
-import twitPrev from "../../assets/fmg_twitter_prev.jpg";
+// import geminiPrev from "../../assets/gemini_prev.jpg";
+// import twitPrev from "../../assets/fmg_twitter_prev.jpg";
 
 const AdShowcase = [
   {
@@ -34,20 +34,20 @@ const AdShowcase = [
     alt: "Fourth Image",
     src: diamondTwoPrev,
   },
-  {
-    id: 5,
-    title: "Gemini Customs ad",
-    description: "Image of Gemini Customs ad",
-    alt: "Fifth Image",
-    src: geminiPrev,
-  },
-  {
-    id: 6,
-    title: "FMG Twitter ad",
-    description: "Image of FMG Twitter ad",
-    alt: "Sixth Image",
-    src: twitPrev,
-  },
+  // {
+  //   id: 5,
+  //   title: "Gemini Customs ad",
+  //   description: "Image of Gemini Customs ad",
+  //   alt: "Fifth Image",
+  //   src: geminiPrev,
+  // },
+  // {
+  //   id: 6,
+  //   title: "FMG Twitter ad",
+  //   description: "Image of FMG Twitter ad",
+  //   alt: "Sixth Image",
+  //   src: twitPrev,
+  // },
 ];
 
 export default AdShowcase;

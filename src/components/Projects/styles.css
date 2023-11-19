@@ -106,8 +106,8 @@
 }
 
 .github2 {
-  width: 90%;
-  height: 90%;
+  width: 40px;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -118,13 +118,13 @@
   }
 
   .box-container {
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 250px;
     margin: 10px;
     }
 
   .github2 {
-    width: 50px;
+    width: 30px;
     height: auto;
   }
 
@@ -139,6 +139,10 @@
     bottom: -40px;
   }
 
+  #ad-section {
+    height: auto;
+    min-height: 600px;
+  }
 }
 
 .github2:hover {
@@ -168,5 +172,12 @@
 
   .box-container {
     opacity: 10%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #ad-section {
+    height: auto;
+    min-height: 400px;
   }
 }

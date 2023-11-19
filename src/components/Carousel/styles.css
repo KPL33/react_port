@@ -3,9 +3,6 @@
   margin-bottom: 30px;
 }
 
-.slick-track {
-    height: 700px;
-}
 
 .slick-prev,
 .slick-next {
@@ -33,20 +30,22 @@
 .ad-carousel .slick-list img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
-
-
-.img-body img {
+.ad-carousel .slick-slide {
   display: flex;
-  margin: 0 auto;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+  justify-content: center;
 }
 
-ul {
-  background-color: white;
+.slick-dots {
+  margin-top: 20px !important;
+}
+
+
+button::before {
+  color: white !important;
+  font-size: 18px !important;
 }
 
 .ad-title {
@@ -61,4 +60,24 @@ ul {
 
 .ad-desc {
   visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .ad-carousel .slick-list {
+    min-width: 200px;
+    max-width: 300px;
+    max-height: 450px;
+  }
+
+  .ad-title {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ad-carousel .slick-list {
+    min-width: 150px;
+    max-width: 200px;
+    max-height: 300px;
+  }
 }

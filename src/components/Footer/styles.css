@@ -72,10 +72,6 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  footer {
-    flex-direction: column;
-  }
-
   #email-container {
   margin-top: 10px;
   }
