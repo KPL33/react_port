@@ -13,28 +13,27 @@ export default function About() {
         <div id="paragraph-box-1">
           <h3 className="snark">Long Story Short...</h3>
           <p className="paragraph">
-            I am a graduate of <span>UCSD</span>&apos;s full-stack web
-            development program and have over 23 years of experience in the
+            I am a graduate of <span>UCSD</span>&apos;s Full-Stack Web
+            Development program and have over 23 years of experience in the
             industries of Design and Publishing. Within this portfolio,
             you&apos;ll find a showcase of projects. I am actively in pursuit of
-            new opportunities and keen to engage in networking and explore
+            new employment opportunities, networking and to explore
             potential collaborations with fellow developers. Should you have any
-            inquiries about my work or background, please don&apos;t hesitate to
-            reach out.
+            inquiries about my work or background, please don&apos;t hesitate to reach out.
           </p>
         </div>
       </div>
 
       <div id="row2">
         <h3 className="snark" id="long">Short Story Long...</h3>
-        <p className="paragraph">
+        {/* <p className="paragraph">
           From an early age, my passion for design and art has been a driving
-          force in shaping my worldview. I believe that creative thinking can
+          force in shaping my life. I believe that creative thinking can
           give us a greater understanding of each other. Every design conveys a
           message. Whether that design lands you a job or gets someone thinking
           a bit differently for a moment, art can be a powerful catalyst for
           positive change.
-        </p>
+        </p> */}
         <p className="paragraph">
           I have dedicated my career to the creative fields, steadily gaining
           valuable experience along the way. Starting with my first job in the
@@ -44,8 +43,8 @@ export default function About() {
         <p className="paragraph">
           Venturing into magazine publishing, I refined my skills, immersing
           myself in the dynamic interplay of creativity and the business side of
-          the industry. Collaborating with external partners, including printing
-          plants and other vendors, enhanced my organizational and
+          the industry. Collaborating with external partners including printing
+          plants and other vendors, I was able to enhance my organizational and
           problem-solving prowess.
         </p>
         <p className="paragraph">
