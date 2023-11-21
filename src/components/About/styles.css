@@ -37,7 +37,8 @@
 
 .snark,
 .paragraph {
-  text-align: left;
+  text-align: justify;
+  text-align-last: left;
 }
 
 .paragraph {

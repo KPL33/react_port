@@ -13,7 +13,7 @@ const Carousel = () => {
         slidesToScroll: 1,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 10000
     };
 
     return (

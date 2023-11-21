@@ -2,7 +2,7 @@
 
 import './styles.css';
 import email from "../../assets/email.svg";
-import github from '../../assets/Octicons-mark-github.svg';
+import github from '../../assets/github.svg';
 import linkedin from '../../assets/LI-In-Bug.svg';
 import leetcode from '../../assets/leetcode_logo.svg';
 import reactLogo from '../../assets/react.png';

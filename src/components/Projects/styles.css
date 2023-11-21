@@ -19,22 +19,32 @@
   margin: 20px 0px;
 }
 
-#ad-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* Hide overflow if carousel exceeds dimensions */
-  max-width: 100%; 
-  min-height: 800px;
+.app-box:hover {
+  box-shadow: 0px 0px 5px 5px white;
+  transition: all ease-in-out 0.3s;
+  transform: scale(1.02);
 }
 
-.ad {
-  margin: 10px 30px;
-  justify-self: center;
+.box-container {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin: 25px;
 }
 
-.one-sixth-vt {
-  margin: 0px 70px;
+.box-container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.app-box:hover .box-container {
+  opacity: 0.1;
+}
+
+.app-box {
+  position: relative;
+  margin: 20px 0px;
 }
 
 .intro {
@@ -50,30 +60,23 @@
   color: white;
 }
 
-.box-container {
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  margin: 10px;
+.github2:hover {
+  transform: scale(1.2);
+  transition: all ease-in-out 0.3s;
 }
 
-.box-container img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-}
-
-/* Need to rename .projects to "apps" or something, because that's what those styles mainly deal with. Then be sure to transfer appropriate styles to the "apps" and "ads" ids. */
-
-.app-box {
-  position: relative;
-  margin: 20px 0px;
+.app-box:hover .title,
+.app-box:hover .desc,
+.app-box:hover .github-link {
+  visibility: visible;
+  opacity: 1;
 }
 
 .title {
   top: 30%;
-  left: 40%;
+  left: 35%;
   font-size: 30px;
+  color: white;
 }
 
 .title,
@@ -81,13 +84,12 @@
   visibility: hidden;
   position: absolute;
   transform: translate(-50%, -50%);
-  color: white;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
 .desc {
-  top: 80%;
+  top: 75%;
   left: 50%;
   font-size: 20px;
   color: var(--accent);
@@ -96,8 +98,12 @@
 .github-link {
   visibility: hidden;
   position: absolute;
+  width: 85px;
+  height: auto;
+  border-radius: 50%;
   top: 30%;
-  left: 82%;
+  left: 76%;
+  margin: 0px 10px;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 20px;
@@ -105,10 +111,18 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.github2 {
-  width: 40px;
-  height: auto;
-  border-radius: 50%;
+#ad-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow if carousel exceeds dimensions */
+  max-width: 100%; 
+  min-height: 800px;
+}
+
+.ad {
+  margin: 10px 30px;
+  justify-self: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -116,68 +130,71 @@
     flex-direction: column;
     align-items: center;
   }
+  
+  .app-box:hover .title,
+  .app-box:hover .desc,
+  .app-box:hover .github-link {
+    visibility: hidden;
+  }
+  
+  .title, .desc, .github-link {
+    visibility: hidden;
+  }
 
+  .visible {
+    visibility: visible;
+  }
+
+  .box-container {
+    margin: 10px;
+    transition: opacity 0.3s ease-in-out !important;
+  }
+  
+  .app-box:hover {
+    box-shadow: 0px 0px 5px 5px white;
+    transition: all ease-in-out 0.3s;
+    transform: scale(1.02);
+  }
+
+  .app-box:hover .box-container {
+  opacity: 1;
+  }
+
+  .app-box.clicked .box-container {
+  opacity: 0.1;
+  }
+
+  #ad-section {
+    min-height: 500px;
+    height: 700px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  #ad-section {
+    min-height: 400px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 375px) {
   .box-container {
     width: 250px;
     height: 250px;
-    margin: 10px;
-    }
-
-  .github2 {
-    width: 30px;
-    height: auto;
   }
 
   .title {
-  top: 30%;
-  left: 40%;
-  font-size: 18px;
+    font-size: 26px;
+  }
+
+  .github2 {
+    width: 75px;
+    height: auto;
   }
 
   .desc {
-    font-size: 12px;
+    font-size: 18px;
     bottom: -40px;
-  }
-
-  #ad-section {
-    height: auto;
-    min-height: 600px;
-  }
-}
-
-.github2:hover {
-  box-shadow: 0px 0px 3px 3px white;
-}
-
-.app-box:hover .title {
-  opacity: 1;
-}
-
-.box-container:hover {
-  opacity: 10%;
-}
-
-.app-box:hover,
-.ad:hover {
-  box-shadow: 0px 0px 5px 5px white;
-  transition: all ease-in-out 0.3s;
-  transform: scale(1.02);
-
-  .title,
-  .desc,
-  .github-link {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .box-container {
-    opacity: 10%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  #ad-section {
-    height: auto;
-    min-height: 400px;
   }
 }
