@@ -16,16 +16,19 @@ export default function About() {
             I am a graduate of <span>UCSD</span>&apos;s Full-Stack Web
             Development program and have over 23 years of experience in the
             industries of Design and Publishing. Within this portfolio,
-            you&apos;ll find a showcase of projects. I am actively in pursuit of
-            new employment opportunities, networking and to explore
-            potential collaborations with fellow developers. Should you have any
-            inquiries about my work or background, please don&apos;t hesitate to reach out.
+            you&apos;ll find my full resume and a showcase of projects. I am
+            actively in pursuit of exploring potential collaborations with fellow
+            developers, new employment opportunities and networking. Should
+            you have any inquiries about my work or background, please
+            don&apos;t hesitate to reach out.
           </p>
         </div>
       </div>
 
       <div id="row2">
-        <h3 className="snark" id="long">Short Story Long...</h3>
+        <h3 className="snark" id="long">
+          Short Story Long...
+        </h3>
         {/* <p className="paragraph">
           From an early age, my passion for design and art has been a driving
           force in shaping my life. I believe that creative thinking can
@@ -50,8 +53,8 @@ export default function About() {
         <p className="paragraph">
           Guiding a talented team during my 3.5 years in a leadership role
           provided me with the invaluable opportunity to deepen my understanding
-          of my staff and colleagues. These cumulative experiences, empowered me to
-          navigate the industry&apos;s complexities and to ensure that my
+          of my staff and colleagues. These cumulative experiences, empowered me
+          to navigate the industry&apos;s complexities and to ensure that my
           creative endeavors are not just visually impactful but also
           strategically aligned with broader business objectives.
         </p>
