@@ -24,12 +24,12 @@ const Carousel = () => {
                         <div className="img-body">
                             <img src={item.src} alt={item.alt} />
                         </div>
-                        <div>
-                        <h2 className="ad-title">{item.title}</h2>
-                        <p className="ad-desc">{item.description}</p>
+                        <div className="info">
+                            <h2 className="ad-title">{item.title}</h2>
+                            <p className="ad-desc">{item.description}</p>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
             </Slider>
         </div>
     );
