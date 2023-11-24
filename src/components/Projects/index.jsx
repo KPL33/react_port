@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Carousel from "../Carousel";
 
 import "./styles.css";
@@ -9,7 +9,7 @@ import mfc from "../../assets/mfc.png";
 import scheduler from "../../assets/scheduler.png";
 import pwd from "../../assets/passfinder.png";
 import jate from "../../assets/jate.png";
-import github2 from "../../assets/github2.svg";
+import github_app_box from "../../assets/github_app_box.svg";
 // import weather from "../../assets/weather.png";
 
 // import checkmateThumb from "../../assets/checkmate_thumb.jpg";
@@ -22,6 +22,7 @@ import github2 from "../../assets/github2.svg";
 export default function Projects() {
   const [clickedBoxes, setClickedBoxes] = useState({});
   const [reveal, setReveal] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const appData = [
     {
@@ -74,20 +75,49 @@ export default function Projects() {
     },
   ];
 
-  const handleBoxClick = (id) => {
-    if (clickedBoxes[id] && reveal) {
-      window.location.href = appData.find((app) => app.id === id).link;
-    } else {
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 500);
+    };
+
+    handleResize(); // Set initial screen size
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleBoxClick = (id, isGitHubLink) => {
+    const app = appData.find((app) => app.id === id);
+
+    if (!isGitHubLink && !isMobile && !clickedBoxes[id]) {
+      // On larger screens, first click reveals details
       setClickedBoxes((prevState) => ({
         ...prevState,
-        [id]: !prevState[id],
+        [id]: true,
       }));
       setReveal(true);
+    } else if (!isGitHubLink && !isMobile && clickedBoxes[id]) {
+      // On larger screens, subsequent clicks redirect to the app link
+      window.open(app.link, "_blank");
+    } else if (isGitHubLink && !isMobile) {
+      window.open(app.githubLink, "_blank");
+    } else if (isMobile && !clickedBoxes[id]) {
+      // On smaller screens, first click reveals details
+      setClickedBoxes((prevState) => ({
+        ...prevState,
+        [id]: true,
+      }));
+      setReveal(true);
+    } else if (isMobile && clickedBoxes[id]) {
+      // On smaller screens, subsequent clicks redirect to the app link
+      window.open(app.link, "_blank");
     }
   };
 
   const handleMouseEnter = (id) => {
-    if (window.innerWidth <= 500 && clickedBoxes[id]) {
+    if (!isMobile || (isMobile && clickedBoxes[id])) {
       setClickedBoxes((prevState) => ({
         ...prevState,
         [id]: true,
@@ -97,7 +127,7 @@ export default function Projects() {
   };
 
   const handleMouseLeave = (id) => {
-    if (window.innerWidth <= 500 && clickedBoxes[id]) {
+    if (isMobile && clickedBoxes[id]) {
       setClickedBoxes((prevState) => ({
         ...prevState,
         [id]: false,
@@ -116,11 +146,16 @@ export default function Projects() {
             className={`app-box ${clickedBoxes[app.id] ? "clicked" : ""} ${
               clickedBoxes[app.id] && reveal ? "reveal" : ""
             }`}
-            onClick={() => handleBoxClick(app.id)}
+            onClick={() => handleBoxClick(app.id, false)}
             onMouseEnter={() => handleMouseEnter(app.id)}
             onMouseLeave={() => handleMouseLeave(app.id)}
           >
-            <a href={app.link} onClick={(e) => e.preventDefault()}>
+            <a
+              href={app.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.preventDefault()}
+            >
               <img
                 className="box-container"
                 src={app.imageUrl}
@@ -146,8 +181,20 @@ export default function Projects() {
                 clickedBoxes[app.id] ? "visible" : "hidden"
               }`}
             >
-              <a href={app.githubLink}>
-                <img className="github2" src={github2} alt="GitHub logo" />
+              <a
+                href={app.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleBoxClick(app.id, true);
+                }}
+              >
+                <img
+                  className="github2"
+                  src={github_app_box}
+                  alt="GitHub logo"
+                />
               </a>
             </div>
           </div>
