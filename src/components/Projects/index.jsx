@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Carousel from "../Carousel";
+import Carousel2 from "../Carousel2";
 
 import "./styles.css";
 
@@ -211,6 +212,7 @@ export default function Projects() {
       <h3 className="intro">Ad Design</h3>
       <div id="ad-section">
         <Carousel />
+        <Carousel2 />
       </div>
     </div>
   );

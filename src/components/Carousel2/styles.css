@@ -1,0 +1,107 @@
+.content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.slick-prev,
+.slick-next {
+  margin: -40px -5px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px; /* Adjust as needed */
+  color: black; /* Change arrow color if needed */
+}
+
+.ad-carousel {
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ad-carousel .slick-list {
+  /* Limit the height of the carousel */
+  max-height: 800px; /* Adjust height as needed */
+}
+
+.ad-carousel .slick-list img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.ad-carousel .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 65%;
+  left: 16.5%;
+}
+
+.slick-dots li {
+  flex-basis: 10%;
+}
+
+
+button::before {
+  color: white !important;
+  font-size: 18px !important;
+}
+
+.ad-title {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.ad-title,
+.ad-desc {
+  color: white;
+}
+
+.ad-desc {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .ad-carousel .slick-list {
+    min-width: 200px;
+    max-width: 400px;
+    max-height: 700px;
+  }
+
+  .slick-dots {
+    max-width: 80%;
+    left: 9%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ad-carousel .slick-list {
+    min-width: 150px;
+    max-width: 250px;
+  }
+
+  .info {
+    height: 0px;
+  }
+
+  button::before {
+    font-size: 12px !important;
+  }
+
+  .ad-title {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+
+  .slick-dots {
+    max-width: 100%;
+    left: -1%;
+  }
+}
