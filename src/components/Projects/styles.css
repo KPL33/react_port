@@ -45,6 +45,7 @@
 .app-box {
   position: relative;
   margin: 20px 0px;
+  opacity: 1;
 }
 
 .intro {
@@ -164,6 +165,9 @@
   .app-box.clicked .box-container {
   opacity: 0.1;
   }
+
+  .app-box:not(.clicked) .box-container {
+    opacity: 1;
 
   #ad-section {
     min-height: 500px;
