@@ -145,10 +145,6 @@ export default function Projects() {
 
   return (
     <div className="projects-page-box">
-      <h3 className="intro">Ad Design</h3>
-      <div id="ad-section">
-        <Carousel />
-      </div>
       <h3 className="intro">Apps</h3>
       <div id="apps-section">
         {appData.map((app) => (
@@ -210,6 +206,11 @@ export default function Projects() {
             </div>
           </div>
         ))}
+
+        <h3 className="intro">Ad Design</h3>
+        <div id="ad-section">
+          <Carousel />
+        </div>
       </div>
     </div>
   );
