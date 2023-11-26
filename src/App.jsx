@@ -9,7 +9,7 @@ export default function App() {
       <div className="portfolio">
         <Header id="header-comp" />
         <Page id="page-comp"/>
-        <Footer id="footer-comp" />
+        {/* <Footer id="footer-comp" /> */}
       </div>
     </>
   );
