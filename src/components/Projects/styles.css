@@ -168,13 +168,12 @@
 
   .app-box:not(.clicked) .box-container {
     opacity: 1;
-
-    #ad-section {
-      min-height: 500px;
-      height: 700px;
-  
   }
 
+  #ad-section {
+    min-height: 500px;
+    height: 700px;
+  }
 }
 
 @media screen and (max-width: 500px) {
