@@ -77,7 +77,14 @@ export default function Projects() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 500);
+      const newIsMobile = window.innerWidth <= 600;
+
+      // Reset state when transitioning between mobile and non-mobile views
+      if (isMobile !== newIsMobile) {
+        setIsMobile(newIsMobile);
+        setClickedBoxes({});
+        setReveal(false);
+      }
     };
 
     handleResize(); // Set initial screen size
@@ -86,7 +93,7 @@ export default function Projects() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [isMobile]);
 
   const handleBoxClick = (id, isGitHubLink) => {
     const app = appData.find((app) => app.id === id);
