@@ -145,68 +145,7 @@ export default function Projects() {
 
   return (
     <div className="projects-page-box">
-      <h3 className="intro">Apps</h3>
-      <div id="apps-section">
-        {appData.map((app) => (
-          <div
-            key={app.id}
-            className={`app-box ${clickedBoxes[app.id] ? "clicked" : ""} ${
-              clickedBoxes[app.id] && reveal ? "reveal" : ""
-            }`}
-            onClick={() => handleBoxClick(app.id, false)}
-            onMouseEnter={() => handleMouseEnter(app.id)}
-            onMouseLeave={() => handleMouseLeave(app.id)}
-          >
-            <a
-              href={app.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.preventDefault()}
-            >
-              <img
-                className="box-container"
-                src={app.imageUrl}
-                alt={`Image of ${app.title}`}
-              />
-              <h5
-                className={`title ${
-                  clickedBoxes[app.id] ? "visible" : "hidden"
-                }`}
-              >
-                {app.title}
-              </h5>
-              <h6
-                className={`desc ${
-                  clickedBoxes[app.id] ? "visible" : "hidden"
-                }`}
-              >
-                {app.description}
-              </h6>
-            </a>
-            <div
-              className={`github-link ${
-                clickedBoxes[app.id] ? "visible" : "hidden"
-              }`}
-            >
-              <a
-                href={app.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleBoxClick(app.id, true);
-                }}
-              >
-                <img
-                  className="github2"
-                  src={github_app_box}
-                  alt="GitHub logo"
-                />
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
+      
 
       <h3 className="intro">Ad Design</h3>
       <div id="ad-section">
