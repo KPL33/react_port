@@ -8,7 +8,8 @@ export default function App() {
     <>
       <div className="portfolio">
         <Header id="header-comp" />
-        <Page id="page-comp"/>
+        <Page/>
+        <Page/>
         <Footer id="footer-comp" />
       </div>
     </>
