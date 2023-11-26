@@ -122,17 +122,6 @@
   padding-bottom: 20px;
 }
 
-#ad-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* Hide overflow if carousel exceeds dimensions */
-  max-width: 100%; 
-  min-height: 800px;
-  padding-bottom: 20px;
-  background-color: green;
-}
-
 .ad {
   margin: 10px 30px;
   justify-self: center;

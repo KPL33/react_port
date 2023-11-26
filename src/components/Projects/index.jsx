@@ -209,11 +209,6 @@ export default function Projects() {
       </div>
 
       <h3 className="intro">Ad Design</h3>
-      <div id="ad-section2">
-        <Carousel />
-      </div>
-
-      <h3 className="intro">Ad Design</h3>
       <div id="ad-section">
         <Carousel />
       </div>
