@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Carousel from "../Carousel";
 
 import "./styles.css";
@@ -23,6 +23,7 @@ export default function Projects() {
   const [clickedBoxes, setClickedBoxes] = useState({});
   const [reveal, setReveal] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const clickedBoxRef = useRef(null);
 
   const appData = [
     {
@@ -95,31 +96,61 @@ export default function Projects() {
     };
   }, [isMobile]);
 
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (
+        clickedBoxRef.current &&
+        !clickedBoxRef.current.contains(event.target)
+      ) {
+        // Click occurred outside the clicked app-box, reset opacity
+        setClickedBoxes({});
+        setReveal(false);
+      }
+    };
+
+    // Event listener for clicks outside the clicked app-box
+    document.body.addEventListener("click", handleOutsideClick);
+    document.body.addEventListener("scroll", handleOutsideClick);
+
+    return () => {
+      document.body.removeEventListener("click", handleOutsideClick);
+      document.body.removeEventListener("scroll", handleOutsideClick);
+    };
+  }, []);
+
   const handleBoxClick = (id, isGitHubLink) => {
     const app = appData.find((app) => app.id === id);
 
-    if (!isGitHubLink && !isMobile && !clickedBoxes[id]) {
-      // On larger screens, first click reveals details
-      setClickedBoxes((prevState) => ({
-        ...prevState,
-        [id]: true,
-      }));
-      setReveal(true);
-    } else if (!isGitHubLink && !isMobile && clickedBoxes[id]) {
-      // On larger screens, subsequent clicks redirect to the app link
-      window.open(app.link, "_blank");
-    } else if (isGitHubLink && !isMobile) {
-      window.open(app.githubLink, "_blank");
-    } else if (isMobile && !clickedBoxes[id]) {
-      // On smaller screens, first click reveals details
-      setClickedBoxes((prevState) => ({
-        ...prevState,
-        [id]: true,
-      }));
-      setReveal(true);
-    } else if (isMobile && clickedBoxes[id]) {
-      // On smaller screens, subsequent clicks redirect to the app link
-      window.open(app.link, "_blank");
+    if (!isMobile) {
+      if (!isGitHubLink && !clickedBoxes[id]) {
+        // On larger screens, first click reveals details
+        setClickedBoxes((prevState) => ({
+          ...prevState,
+          [id]: true,
+        }));
+        setReveal(true);
+      } else if (!isGitHubLink && clickedBoxes[id]) {
+        // On larger screens, subsequent clicks redirect to the app link
+        window.open(app.link, "_blank");
+      } else if (isGitHubLink) {
+        // Open GitHub link when the GitHub logo is clicked
+        window.open(app.githubLink, "_blank");
+      }
+    } else {
+      if (!isGitHubLink && !clickedBoxes[id]) {
+        // On smaller screens, first click reveals details
+        setClickedBoxes((prevState) => ({
+          ...prevState,
+          [id]: true,
+        }));
+        setReveal(true);
+      } else if (!isGitHubLink && clickedBoxes[id]) {
+        // On smaller screens, subsequent clicks redirect to the app link
+        window.open(app.link, "_blank");
+      } else if (isGitHubLink) {
+        // Open GitHub link when the GitHub logo is clicked
+        window.open(app.githubLink, "_blank");
+      }
     }
   };
 
