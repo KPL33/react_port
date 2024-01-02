@@ -10,7 +10,7 @@ import scheduler from "../../assets/scheduler.png";
 import pwd from "../../assets/passfinder.png";
 import jate from "../../assets/jate.png";
 import github_app_box from "../../assets/github_app_box.svg";
-// import weather from "../../assets/weather.png";
+import weather from "../../assets/weather.png";
 
 // import checkmateThumb from "../../assets/checkmate_thumb.jpg";
 // import geminiThumb from "../../assets/gemini_thumb.jpg";
@@ -36,6 +36,14 @@ export default function Projects() {
     },
     {
       id: 2,
+      imageUrl: weather,
+      title: "WeatherWise",
+      link: "https://astounding-trifle-53a7a0.netlify.app/",
+      githubLink: "https://github.com/KPL33/weather",
+      description: "Click to view this Front-End Weather App",
+    },
+    {
+      id: 3,
       imageUrl: mfc,
       title: "Movie Fight Club",
       link: "https://shadowfre4k.github.io/Movie-Fight-Club/",
@@ -43,7 +51,15 @@ export default function Projects() {
       description: "Click to view this Front-End Entertainment Rating App",
     },
     {
-      id: 3,
+      id: 4,
+      imageUrl: jate,
+      title: "J.A.T.E.",
+      link: "https://cryptic-everglades-02017-1b72bab49c69.herokuapp.com/",
+      githubLink: "https://github.com/KPL33/text_editor",
+      description: "Click to view this PWA Text Editing App",
+    },
+    {
+      id: 5,
       imageUrl: gitajob,
       title: "GitAJob",
       link: "https://murmuring-sierra-21351-123e19ae1f23.herokuapp.com/login",
@@ -51,7 +67,7 @@ export default function Projects() {
       description: "Click to view this Full-Stack Job-Search App",
     },
     {
-      id: 4,
+      id: 6,
       imageUrl: scheduler,
       title: "Work Day Scheduler",
       link: "https://kpl33.github.io/work_day_scheduler/",
@@ -59,20 +75,12 @@ export default function Projects() {
       description: "Click to view this Front-End Scheduling App",
     },
     {
-      id: 5,
+      id: 7,
       imageUrl: shoes,
       title: "NPM Shoes",
       link: "https://quiet-wave-07026-0aa4799b37aa.herokuapp.com/",
       githubLink: "https://github.com/SixFourDev/npm-run-start",
       description: "Click to view this Full-Stack E-Commerce App",
-    },
-    {
-      id: 6,
-      imageUrl: jate,
-      title: "J.A.T.E.",
-      link: "https://cryptic-everglades-02017-1b72bab49c69.herokuapp.com/",
-      githubLink: "https://github.com/KPL33/text_editor",
-      description: "Click to view this PWA Text Editing App",
     },
   ];
 
