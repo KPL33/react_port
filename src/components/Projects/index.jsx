@@ -4,7 +4,7 @@ import Carousel from "../Carousel";
 import "./styles.css";
 
 import gitajob from "../../assets/gitajob.png";
-import shoes from "../../assets/npm_shoes.png";
+// import shoes from "../../assets/npm_shoes.png";
 import mfc from "../../assets/mfc.png";
 import scheduler from "../../assets/scheduler.png";
 import pwd from "../../assets/passfinder.png";
@@ -74,14 +74,14 @@ export default function Projects() {
       githubLink: "https://github.com/KPL33/work_day_scheduler",
       description: "Click to view this Front-End Scheduling App",
     },
-    {
-      id: 7,
-      imageUrl: shoes,
-      title: "NPM Shoes",
-      link: "https://quiet-wave-07026-0aa4799b37aa.herokuapp.com/",
-      githubLink: "https://github.com/SixFourDev/npm-run-start",
-      description: "Click to view this Full-Stack E-Commerce App",
-    },
+    // {
+    //   id: 7,
+    //   imageUrl: shoes,
+    //   title: "NPM Shoes",
+    //   link: "https://quiet-wave-07026-0aa4799b37aa.herokuapp.com/",
+    //   githubLink: "https://github.com/SixFourDev/npm-run-start",
+    //   description: "Click to view this Full-Stack E-Commerce App",
+    // }
   ];
 
   useEffect(() => {
