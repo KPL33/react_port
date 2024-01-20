@@ -1,7 +1,15 @@
 .resume {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+.download {
+    font-size: 28px;
+    font-family: "Righteous", sans-serif;
+    color: var(--accent);
+    margin-top: 40px;
+}
 .resume img {
     width: 100%;
     height: auto;
