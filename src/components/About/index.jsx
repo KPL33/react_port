@@ -17,8 +17,8 @@ export default function About() {
             Development program and have over 23 years of experience in the
             industries of Design and Publishing. Within this portfolio,
             you&apos;ll find my full resume and a showcase of projects. I am
-            actively in pursuit of exploring potential collaborations with
-            fellow developers, new employment opportunities and networking.
+            actively pursuing collaborations with fellow developers, new employment
+            opportunities and networking.
             Should you have any inquiries about my work or background, please
             don&apos;t hesitate to reach out.
           </p>

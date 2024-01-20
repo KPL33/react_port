@@ -1,6 +1,8 @@
 import activa from "../../assets/activa.jpg"; 
 import ah from "../../assets/ah.jpg"; 
 import arted from "../../assets/arted.jpg"; 
+import apple from "../../assets/apple_illustration.jpg"; 
+import audi from "../../assets/audi.jpg";
 import battleCompPrev from "../../assets/battlecomp_prev.jpg"; 
 import checkmatePrev from "../../assets/checkmate_prev.jpg";
 import diamondOnePrev from "../../assets/diamond1_prev.jpg";
@@ -13,21 +15,22 @@ import insider from "../../assets/insider.jpg";
 import merch from "../../assets/merch.jpg";
 import mauser from "../../assets/mauser.jpg";
 import ocken from "../../assets/ocken.jpg";
-
 import perfectmold from "../../assets/perfectmold.jpg";
+import pinterest from "../../assets/pinterest.jpg";
+import pixelebration from "../../assets/pixelebration.jpg";
 import righttool from "../../assets/righttool.jpg";
 import socialad from "../../assets/socialad.jpg";
-// import twitPrev from "../../assets/fmg_twitter_prev.jpg";
+import superG from "../../assets/superG.jpg";
 import tyler from "../../assets/tyler.jpg";
 import warne from "../../assets/warne.jpg";
 
 const AdShowcase = [
   {
     id: 1,
-    title: "BattleComp - print ad",
-    description: "Image of BattleComp print ad.",
+    title: "Art of Education - print ad",
+    description: "Image of Art of Education print ad",
     alt: "First Image",
-    src: battleCompPrev,
+    src: arted,
   },
   {
     id: 2,
@@ -38,17 +41,17 @@ const AdShowcase = [
   },
   {
     id: 3,
-    title: "DiamondD Custom Leather - print ad, version 1",
-    description: "Image of DiamondD Custom Leather print ad, version 1",
+    title: "Pixelebration - business logo",
+    description: "Image of Pixelebration logo.",
     alt: "Third Image",
-    src: diamondOnePrev,
+    src: pixelebration,
   },
   {
     id: 4,
-    title: "DiamondD Custom Leather - print ad, version 2",
-    description: "Image of DiamondD Custom Leather print ad, version 2",
+    title: "DiamondD Custom Leather - print ad, version 1",
+    description: "Image of DiamondD Custom Leather print ad, version 1",
     alt: "Fourth Image",
-    src: diamondTwoPrev,
+    src: diamondOnePrev,
   },
   {
     id: 5,
@@ -59,38 +62,38 @@ const AdShowcase = [
   },
   {
     id: 6,
-    title: "FMG Holiday Gift - digital ad",
-    description: "Image of FMG Holiday Gift digital ad",
+    title: "DiamondD Custom Leather - print ad, version 2",
+    description: "Image of DiamondD Custom Leather print ad, version 2",
     alt: "Sixth Image",
-    src: merch,
+    src: diamondTwoPrev,
   },
   {
     id: 7,
-    title: "Gemini Customs - digital ad",
-    description: "Image of Gemini Customs digital ad",
+    title: "Audi - Illustrator logo",
+    description: "Image of Audi - Illustrator logo",
     alt: "Seventh Image",
-    src: gemini,
+    src: audi,
   },
   {
     id: 8,
-    title: "Tyler Gunworks - print ad",
-    description: "Image of Tyler Gunworks print ad",
+    title: "FMG Holiday Gift - digital ad",
+    description: "Image of FMG Holiday Gift digital ad",
     alt: "Eighth Image",
-    src: tyler,
+    src: merch,
   },
   {
     id: 9,
-    title: "Warne Tactical - print ad",
-    description: "Image of Warne Tactical print ad",
+    title: "Tyler Gunworks - print ad",
+    description: "Image of Tyler Gunworks print ad",
     alt: "Ninth Image",
-    src: warne,
+    src: tyler,
   },
   {
     id: 10,
-    title: "Mitchell's Mausers - digital ad",
-    description: "Image of Mitchell's Mausers digital ad",
+    title: "Perfect Mold - print ad",
+    description: "Image of Perfect Mold print ad",
     alt: "Tenth Image",
-    src: mauser,
+    src: perfectmold,
   },
   {
     id: 11,
@@ -108,10 +111,10 @@ const AdShowcase = [
   },
   {
     id: 13,
-    title: "Guns Magazine Website Promo - print ad",
-    description: "Image of Guns Magazine Website Promo print ad",
+    title: "Super-G Illustrator logo",
+    description: "Image of Super-G Illustrator logo",
     alt: "Thirteenth Image",
-    src: gn,
+    src: superG,
   },
   {
     id: 14,
@@ -122,24 +125,24 @@ const AdShowcase = [
   },
   {
     id: 15,
-    title: "FMG Social Media Promo - print ad",
-    description: "Image of FMG Social Media Promo print ad",
+    title: "Apple - Illustrator",
+    description: "Image of an Apple - Illustrator",
     alt: "Fifteenth Image",
-    src: socialad,
+    src: apple,
   },
   {
     id: 16,
-    title: "Art of Education - print ad",
-    description: "Image of Art of Education print ad",
+    title: "Mitchell's Mausers - digital ad",
+    description: "Image of Mitchell's Mausers digital ad",
     alt: "Sixteenth Image",
-    src: arted,
+    src: mauser,
   },
   {
     id: 17,
-    title: "Perfect Mold - print ad",
-    description: "Image of Perfect Mold print ad",
+    title: "Warne Tactical - print ad",
+    description: "Image of Warne Tactical print ad",
     alt: "Seventeenth Image",
-    src: perfectmold,
+    src: warne,
   },
   {
     id: 18,
@@ -162,6 +165,48 @@ const AdShowcase = [
     alt: "Twentieth Image",
     src: ocken,
   },
+  {
+    id: 21,
+    title: "BattleComp - print ad",
+    description: "Image of BattleComp print ad.",
+    alt: "Twenty-First Image",
+    src: battleCompPrev,
+  },
+  {
+    id: 22,
+    title: "CheckMate - print ad",
+    description: "Image of CheckMate print ad.",
+    alt: "Twenty-Second Image",
+    src: checkmatePrev,
+  },
+  {
+    id: 23,
+    title: "Gemini Customs - digital ad",
+    description: "Image of Gemini Customs digital ad",
+    alt: "Twenty-Third Image",
+    src: gemini,
+  },
+  {
+    id: 24,
+    title: "Guns Magazine Website Promo - print ad",
+    description: "Image of Guns Magazine Website Promo print ad",
+    alt: "Twenty-Fourth Image",
+    src: gn,
+  },
+  {
+    id: 25,
+    title: "FMG Social Media Promo - print ad",
+    description: "Image of FMG Social Media Promo print ad",
+    alt: "Twenty-Fifth Image",
+    src: socialad,
+  },
+  {
+    id: 26,
+    title: "FMG Pinterest Page Promo - digital ad",
+    description: "Image of FMG Pinterest Page Promo digital ad",
+    alt: "Twenty-Fifth Image",
+    src: pinterest,
+  }
 ];
 
 export default AdShowcase;
