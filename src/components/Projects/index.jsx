@@ -5,7 +5,7 @@ import "./styles.css";
 
 import gitajob from "../../assets/gitajob.png";
 // import shoes from "../../assets/npm_shoes.png";
-import mfc from "../../assets/mfc.png";
+import mf from "../../assets/mf.jpg";
 import scheduler from "../../assets/scheduler.png";
 import pwd from "../../assets/passfinder.png";
 import jate from "../../assets/jate.png";
@@ -28,6 +28,14 @@ export default function Projects() {
   const appData = [
     {
       id: 1,
+      imageUrl: mf,
+      title: "Movie Fight",
+      link: "https://rt-movie-fight.netlify.app/",
+      githubLink: "https://github.com/KPL33/movie-fight",
+      description: "Click to view this Front-End Entertainment Rating App",
+    },
+    {
+      id: 2,
       imageUrl: pwd,
       title: "PassFinder",
       link: "https://candid-snickerdoodle-e60aa3.netlify.app/",
@@ -35,20 +43,12 @@ export default function Projects() {
       description: "Click to view this Front-End Password Generator App",
     },
     {
-      id: 2,
+      id: 3,
       imageUrl: weather,
       title: "WeatherWise",
       link: "https://astounding-trifle-53a7a0.netlify.app/",
       githubLink: "https://github.com/KPL33/weather",
       description: "Click to view this Front-End Weather App",
-    },
-    {
-      id: 3,
-      imageUrl: mfc,
-      title: "Movie Fight Club",
-      link: "https://shadowfre4k.github.io/Movie-Fight-Club/",
-      githubLink: "https://github.com/shadowfre4k/Movie-Fight-Club",
-      description: "Click to view this Front-End Entertainment Rating App",
     },
     {
       id: 4,
