@@ -30,14 +30,7 @@ export default function About() {
           <h3 className="snark" id="long">
             Short Story Long...
           </h3>
-          {/* <p className="paragraph">
-            From an early age, my passion for design and art has been a driving
-            force in shaping my life. I believe that creative thinking can
-            give us a greater understanding of each other. Every design conveys a
-            message. Whether that design lands you a job or gets someone thinking
-            a bit differently for a moment, art can be a powerful catalyst for
-            positive change.
-          </p> */}
+          
           <p className="paragraph">
             I have dedicated my career to the creative fields, steadily gaining
             valuable experience along the way. Starting with my first job in the
@@ -55,7 +48,7 @@ export default function About() {
             Guiding a talented team during my 3.5 years in a leadership role
             provided me with the invaluable opportunity to deepen my
             understanding of my staff and colleagues. These cumulative
-            experiences, empowered me to navigate the industry&apos;s
+            experiences empowered me to navigate the industry&apos;s
             complexities and to ensure that my creative endeavors are not just
             visually impactful but also strategically aligned with broader
             business objectives.
