@@ -32,7 +32,7 @@ export default function Projects() {
       title: "Movie Fight",
       link: "https://rt-movie-fight.netlify.app/",
       githubLink: "https://github.com/KPL33/movie-fight",
-      description: "Click to view this Front-End Entertainment Rating App",
+      description: "Click to view this Front-End Movie Rating App",
     },
     {
       id: 2,
