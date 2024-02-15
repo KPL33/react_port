@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Carousel from "../Carousel";
+import AppCarousel from "../AppCarousel";
 
 import "./styles.css";
 
@@ -250,6 +251,11 @@ export default function Projects() {
       <h3 className="intro">Ad Design</h3>
       <div id="ad-section">
         <Carousel />
+      </div>
+
+      <h3 className="intro">Apps</h3>
+      <div id="app-section2">
+        <AppCarousel />
       </div>
     </div>
   );
