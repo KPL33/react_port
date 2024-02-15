@@ -252,11 +252,6 @@ export default function Projects() {
       <div id="ad-section">
         <Carousel />
       </div>
-
-      <h3 className="intro">Apps</h3>
-      <div id="app-section2">
-        <AppCarousel />
-      </div>
     </div>
   );
 }
