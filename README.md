@@ -4,7 +4,7 @@
 </br>
 
 ## Overview
-This portfolio is intended to showcase my work as a Full-Stack Developer and provide a resume and contact information for prospective employers.
+This portfolio is intended to showcase my work as a Full-Stack Developer and to provide a resume and contact information for prospective employers.
 
 </br>
 
