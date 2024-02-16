@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Carousel from "../Carousel";
-import AppCarousel from "../AppCarousel";
+// import AppCarousel from "../AppCarousel";
 
 import "./styles.css";
 
@@ -12,14 +12,7 @@ import pwd from "../../assets/passfinder.png";
 import jate from "../../assets/jate.png";
 import github_app_box from "../../assets/github_app_box.svg";
 import weather from "../../assets/weather.png";
-import AdCarousel from "../AdCarousel";
-
-// import checkmateThumb from "../../assets/checkmate_thumb.jpg";
-// import geminiThumb from "../../assets/gemini_thumb.jpg";
-// import twitThumb from "../../assets/fmg_twitter_thumb.jpg";
-// import battlecompThumb from "../../assets/battlecomp_thumb.jpg";
-// import diamondOneThumb from "../../assets/diamond1_thumb.jpg";
-// import diamondTwoThumb from "../../assets/diamond2_thumb.jpg";
+// import AdCarousel from "../AdCarousel";
 
 export default function Projects() {
   const [clickedBoxes, setClickedBoxes] = useState({});
@@ -252,7 +245,6 @@ export default function Projects() {
       <h3 className="intro">Ad Design</h3>
       <div id="ad-section">
         <Carousel />
-        <AdCarousel />
       </div>
     </div>
   );
