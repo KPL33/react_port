@@ -40,7 +40,7 @@ export default function About() {
           <p className="paragraph">
             Venturing into magazine publishing, I refined my skills, immersing
             myself in the dynamic interplay of creativity and the business side
-            of the industry. Collaborating with external partners including
+            of the industry. Collaborating with external partners, including
             printing plants and other vendors, I was able to enhance my
             organizational and problem-solving prowess.
           </p>
