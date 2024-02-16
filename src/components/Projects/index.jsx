@@ -12,6 +12,7 @@ import pwd from "../../assets/passfinder.png";
 import jate from "../../assets/jate.png";
 import github_app_box from "../../assets/github_app_box.svg";
 import weather from "../../assets/weather.png";
+import AdCarousel from "../AdCarousel";
 
 // import checkmateThumb from "../../assets/checkmate_thumb.jpg";
 // import geminiThumb from "../../assets/gemini_thumb.jpg";
@@ -251,6 +252,7 @@ export default function Projects() {
       <h3 className="intro">Ad Design</h3>
       <div id="ad-section">
         <Carousel />
+        <AdCarousel />
       </div>
     </div>
   );
