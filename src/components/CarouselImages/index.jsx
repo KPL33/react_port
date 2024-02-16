@@ -10,7 +10,6 @@ import diamondTwoPrev from "../../assets/diamond2_prev.jpg";
 import diamondThreePrev from "../../assets/diamond3_prev.jpg";
 import fmglinkedin from "../../assets/fmglinkedin.jpg";
 import gemini from "../../assets/gemini.jpg";
-import gitajob from "../../assets/gitajob.png";
 import gn from "../../assets/gn.jpg";
 import insider from "../../assets/insider.jpg";
 import merch from "../../assets/merch.jpg";
@@ -207,13 +206,6 @@ const AdShowcase = [
     description: "Image of FMG Pinterest Page Promo digital ad",
     alt: "Twenty-Fifth Image",
     src: pinterest,
-  },
-  {
-    id: 27,
-    title: "GitAJob",
-    description: "Image of",
-    alt: "Zeroth Image",
-    src: gitajob,
   },
 ];
 
