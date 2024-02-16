@@ -34,6 +34,8 @@ export default function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    console.log("Submit button clicked!");
+
     if (!isValidEmail) {
       alert("Invalid email address");
       return;

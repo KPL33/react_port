@@ -5,9 +5,9 @@
   "homepage": "https://kpl33.github.io/react_port/",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "d": "vite",
     "start": "vite",
-    "build": "vite build",
+    "b": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
