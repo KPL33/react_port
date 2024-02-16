@@ -1,6 +1,4 @@
 import activa from "../../assets/activa.jpg"; 
-import activa2 from "../../assets/activa2.png"; 
-import activa3 from "../../assets/activa.png"; 
 import ah from "../../assets/ah.jpg"; 
 import arted from "../../assets/arted.jpg"; 
 import apple from "../../assets/apple_illustration.jpg"; 
@@ -206,22 +204,8 @@ const AdShowcase = [
     id: 26,
     title: "FMG Pinterest Page Promo - digital ad",
     description: "Image of FMG Pinterest Page Promo digital ad",
-    alt: "Twenty-Fifth Image",
+    alt: "Twenty-Sixth Image",
     src: pinterest,
-  },
-  {
-    id: 27,
-    title: "Activa png3",
-    description: "Image",
-    alt: "Twenty-Image",
-    src: activa3,
-  },
-  {
-    id: 28,
-    title: "Activa png2",
-    description: "Image",
-    alt: "Twenty Image",
-    src: activa2,
   },
 ];
 
