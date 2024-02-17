@@ -10,6 +10,7 @@ import App from './App.jsx'
 import ErrorPage from './components/Error';
 import About from './components/About';
 import Contact from './components/Contact';
+import Contact2 from './components/Page/Contact2';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: <Contact />
+      },
+      {
+        path: 'contact2',
+        element: <Contact2 />
       },
       {
         path: 'resume',
