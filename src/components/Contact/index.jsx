@@ -38,7 +38,7 @@ export default function Contact() {
       alert("Invalid email address");
       return;
     }
-    console.log("clicked!");
+    console.log();
   };
 
   return (
