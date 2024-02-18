@@ -1,58 +1,45 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
 export default function Contact2() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [formErrors, setFormErrors] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
-    setFormErrors((prevErrors) => ({ ...prevErrors, [name]: "" }));
-  };
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [messageError, setMessageError] = useState("");
 
   const validateForm = () => {
     let isValid = true;
-    const { name, email, message } = formData;
 
     if (!name.trim()) {
-      setFormErrors((prevErrors) => ({
-        ...prevErrors,
-        name: "Please provide your name before sending your message.",
-      }));
+      setNameError("Please provide your name before sending your message.");
       isValid = false;
+    } else {
+      setNameError("");
     }
 
     if (!email.trim() || !isValidEmail(email)) {
-      setFormErrors((prevErrors) => ({
-        ...prevErrors,
-        email:
-          "Please provide a valid email address before sending your message.",
-      }));
+      setEmailError(
+        "Please provide a valid email address before sending your message."
+      );
       isValid = false;
+    } else {
+      setEmailError("");
     }
 
     if (!message.trim()) {
-      setFormErrors((prevErrors) => ({
-        ...prevErrors,
-        message: "Please provide your message before sending.",
-      }));
+      setMessageError("Please provide your message before sending.");
       isValid = false;
+    } else {
+      setMessageError("");
     }
 
     return isValid;
   };
 
   const isValidEmail = (email) => {
+    // Simple email validation pattern
     const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     return emailPattern.test(email);
   };
@@ -61,10 +48,8 @@ export default function Contact2() {
     event.preventDefault();
 
     if (validateForm()) {
-      // Form is valid, submit or perform actions here
-      console.log("Form submitted!", formData);
-
-      // You can also submit the form data to Netlify if needed
+      // Perform additional actions or submit the form
+      console.log("Form submitted!");
     }
   };
 
@@ -79,11 +64,11 @@ export default function Contact2() {
           <input
             type="text"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </label>
-        <span className="error-message">{formErrors.name}</span>
+        <span className="error-message">{nameError}</span>
       </p>
 
       <p>
@@ -92,11 +77,11 @@ export default function Contact2() {
           <input
             type="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </label>
-        <span className="error-message">{formErrors.email}</span>
+        <span className="error-message">{emailError}</span>
       </p>
 
       <p>
@@ -104,11 +89,11 @@ export default function Contact2() {
           Message:
           <textarea
             name="message"
-            value={formData.message}
-            onChange={handleChange}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           />
         </label>
-        <span className="error-message">{formErrors.message}</span>
+        <span className="error-message">{messageError}</span>
       </p>
 
       <p>
