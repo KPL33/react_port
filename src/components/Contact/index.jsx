@@ -34,8 +34,6 @@ export default function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    console.log("Submit button clicked!");
-
     if (!isValidEmail) {
       alert("Invalid email address");
       return;
@@ -43,64 +41,65 @@ export default function Contact() {
   };
 
   return (
-    <form
-      className="box"
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      onSubmit={handleSubmit}
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <h3 id="contact">Contact</h3>
-      <div className="form-outline mb-4">
-        <label className="form-label" htmlFor="form4Example1">
-          <h4 className="field-titles">Name:</h4>
-        </label>
-        <input
-          type="text"
-          name="name"
-          id="form4Example1"
-          className="form-control"
-        />
-      </div>
+    <section>
+      <form
+        className="box"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        onSubmit={handleSubmit}
+      >
+        <h3 id="contact">Contact</h3>
+        <div className="form-outline mb-4">
+          <label className="form-label" htmlFor="form4Example1">
+            <h4 className="field-titles">Name:</h4>
+          </label>
+          <input
+            type="text"
+            name="name"
+            id="form4Example1"
+            className="form-control"
+          />
+        </div>
 
-      <div className="form-outline mb-4">
-        <label className="form-label" htmlFor="form4Example2">
-          <h4 className="field-titles">Email Address:</h4>
-        </label>
-        <input
-          type="email"
-          name="email"
-          id="form4Example2"
-          className={`form-control ${!isValidEmail ? "is-invalid" : ""}`}
-          value={email}
-          onChange={handleEmailChange}
-        />
-        {!isValidEmail && (
-          <div className="invalid-feedback">
-            Please enter a valid email address.
-          </div>
-        )}
-      </div>
+        <div className="form-outline mb-4">
+          <label className="form-label" htmlFor="form4Example2">
+            <h4 className="field-titles">Email Address:</h4>
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="form4Example2"
+            className={`form-control ${!isValidEmail ? "is-invalid" : ""}`}
+            value={email}
+            onChange={handleEmailChange}
+          />
+          {!isValidEmail && (
+            <div className="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+          )}
+        </div>
 
-      <div className="form-outline mb-4">
-        <label className="form-label" htmlFor="form4Example3">
-          <h4 className="field-titles">Message:</h4>
-        </label>
-        <textarea
-          name="message"
-          className="form-control"
-          id="form4Example3"
-          rows="4"
-          ref={messageRef}
-          value={message}
-          onChange={handleMessageChange}
-        ></textarea>
-      </div>
+        <div className="form-outline mb-4">
+          <label className="form-label" htmlFor="form4Example3">
+            <h4 className="field-titles">Message:</h4>
+          </label>
+          <textarea
+            name="message"
+            className="form-control"
+            id="form4Example3"
+            rows="4"
+            ref={messageRef}
+            value={message}
+            onChange={handleMessageChange}
+          ></textarea>
+        </div>
 
-      <button type="submit" className="btn btn-primary btn-block mb-4">
-        <h3 id="send">Send</h3>
-      </button>
-    </form>
+        <button type="submit" className="btn btn-primary btn-block mb-4">
+          <h3 id="send">Send</h3>
+        </button>
+      </form>
+    </section>
   );
 }
