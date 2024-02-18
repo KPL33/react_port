@@ -31,14 +31,15 @@ export default function Contact() {
     textarea.style.height = textarea.scrollHeight + "px";
   };
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-  //   if (!isValidEmail) {
-  //     alert("Invalid email address");
-  //     return;
-  //   }
-  // };
+    if (!isValidEmail) {
+      alert("Invalid email address");
+      return;
+    }
+    console.log("clicked!");
+  };
 
   return (
     <section>
@@ -47,8 +48,9 @@ export default function Contact() {
         name="contact"
         method="POST"
         data-netlify="true"
-        // onSubmit={handleSubmit}
+        onSubmit={handleSubmit}
       >
+        <input type="hidden" name="form-name" value="contact" />
         <h3 id="contact">Contact</h3>
         <div className="form-outline mb-4">
           <label className="form-label" htmlFor="form4Example1">
