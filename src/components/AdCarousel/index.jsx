@@ -1,38 +1,28 @@
-import "./styles.css";
-import Slider from "react-slick";
+import "react-image-gallery/styles/css/image-gallery.css";
+import ImageGallery from "react-image-gallery";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import AdShowcase from "../AdCarousel/AdCarouselData";
-
-const AdCarousel = () => {
-  const settings = {
-    dots: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 10000,
-  };
+export default function AdCarousel() {
+  const images = [
+    {
+      original: "https://picsum.photos/id/1018/1000/600/",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1015/1000/600/",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+  ];
 
   return (
-    <div className="ad-carousel">
-      <Slider {...settings}>
-        {AdShowcase.map((item) => (
-          <div key={item.id}>
-            <div className="img-body">
-              <img src={item.src} alt={item.alt} />
-            </div>
-            <div className="info">
-              <h2 className="ad-title">{item.title}</h2>
-              <p className="ad-desc">{item.description}</p>
-            </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <ImageGallery
+      items={images}
+      slideInterval={5000}
+      slideOnThumbnailOver={true}
+      showIndex={true}
+    />
   );
-};
-
-export default AdCarousel;
+}
