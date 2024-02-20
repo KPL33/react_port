@@ -15,12 +15,16 @@
   padding: 20px 0;
 }
 
-.image-gallery-index {
+/* .image-gallery-index {
   font-size: 1.5rem;
   font-family: "Righteous", sans-serif;
   max-width: auto;
   margin: 20px 85px 0 0;
   padding: 10px;
+} */
+
+.image-gallery-description, .image-gallery-index {
+    display: none;
 }
 
 .image-gallery-thumbnails-container {
