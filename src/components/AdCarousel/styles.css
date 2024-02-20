@@ -1,0 +1,28 @@
+.image-gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+}
+
+.image-gallery-slide-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.image-gallery-slide-wrapper,
+.image-gallery-index {
+  padding: 20px 0;
+}
+
+.image-gallery-index {
+  font-size: 1.5rem;
+  font-family: "Righteous", sans-serif;
+  max-width: auto;
+  margin: 20px 85px 0 0;
+  padding: 10px;
+}
+
+.image-gallery-thumbnails-container {
+  width: 100%;
+}
