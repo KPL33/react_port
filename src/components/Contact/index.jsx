@@ -42,7 +42,6 @@ export default function Contact() {
   };
 
   return (
-    <section>
       <form
         className="box"
         name="contact"
@@ -102,6 +101,5 @@ export default function Contact() {
           <h3 id="send">Send</h3>
         </button>
       </form>
-    </section>
   );
 }
