@@ -39,6 +39,10 @@
   color: var(--accent);
 }
 
+.image-gallery-content {
+  height: 100%;
+}
+
 .image-gallery-thumbnails-container {
   width: 100%;
   
