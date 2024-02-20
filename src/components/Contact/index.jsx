@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./styles.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "./styles.css";
 
 export default function Contact() {
   const [name, setName] = useState("");
