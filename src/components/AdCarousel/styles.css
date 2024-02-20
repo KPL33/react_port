@@ -27,6 +27,10 @@
     display: none;
 }
 
+.image-gallery-svg {
+    color: var(--accent);
+}
+
 .image-gallery-thumbnails-container {
   width: 100%;
 }
