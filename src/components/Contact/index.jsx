@@ -109,27 +109,25 @@ import "./styles.css";
 
 export default function Contact2() {
   return (
-    <form name="contact" method="post" className="box contact-box">
-      <input type="hidden" name="form-name" value="contact" />
-      
+    <section className="contact-wrapper">
+      <form name="contact" method="post" className="box contact-box">
+        <input type="hidden" name="form-name" value="contact" />
+
         <label>
-          Your Name: <input type="text" name="name" />
+          Name: <input type="text" name="name" />
         </label>
-      
-      
+
         <label>
-          Your Email: <input type="email" name="email" />
+          Email: <input type="email" name="email" />
         </label>
-      
-      
+
         <label>
           Message: <textarea name="message"></textarea>
         </label>
-      
-      
+
         <button type="submit">Send</button>
-      
-    </form>
+      </form>
+    </section>
   );
 }
 

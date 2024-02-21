@@ -27,8 +27,8 @@
 
 .box-container {
   display: inline-block;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin: 25px;
 }
 
@@ -76,7 +76,7 @@
 .title {
   top: 30%;
   left: 35%;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
 }
 
@@ -92,7 +92,7 @@
 .desc {
   top: 75%;
   left: 50%;
-  font-size: 28px;
+  font-size: 20px;
   color: var(--accent);
 }
 
