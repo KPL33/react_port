@@ -11,11 +11,14 @@ body {
   min-height: 100vh;
 }
 
+/* remove display flex here if trouble with positioning throughout site. */
 .page {
   flex: 1;
   min-height: 63vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* #footer-comp {
   position: fixed;
@@ -28,4 +31,3 @@ body {
 .portfolio {
   background-color: var(--bgrnd);
 }
-
