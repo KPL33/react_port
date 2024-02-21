@@ -1,5 +1,5 @@
 //Here, we render our "Footer".
-
+import { Link } from "react-router-dom";
 import './styles.css';
 import email from "../../assets/email.svg";
 import github from '../../assets/github.svg';
@@ -11,25 +11,21 @@ import reactLogo from '../../assets/react.png';
 export default function Footer() {
   const emailAddress="kevdev@myyahoo.com";
 
-  const handleEmailClick = () => {
-    window.location.href = `mailto:${emailAddress}`;
-  }
+  // const handleEmailClick = () => {
+  //   window.location.href = `mailto:${emailAddress}`;
+  // }
   return (
     <footer id="contact-section" className="box">
       <div id="email-container">
-        <a
-          id="email-link"
-          href={`mailto:${emailAddress}`}
-          onClick={handleEmailClick}
-        >
+        <Link to="/Contact" id="email-link">
           <img
             id="email"
             className="social-logo"
             src={email}
             alt="Email icon"
           />
-          <p id="email-address">kevdev@myyahoo.com</p>
-        </a>
+          <p id="email-address">{emailAddress}</p>
+        </Link>
       </div>
       <div className="socials">
         <a href="https://www.linkedin.com/in/kevin-lewis92126">
