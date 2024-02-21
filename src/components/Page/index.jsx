@@ -1,9 +1,9 @@
 import { useLocation } from "react-router-dom";
-import About from "../About"; // Adjust the path accordingly
-import Projects from "../Projects"; // Adjust the path accordingly
-import Resume from "../Resume"; // Adjust the path accordingly
-import Contact from "../Contact"; // Adjust the path accordingly
-import Contact2 from "../Page/Contact2"; // Adjust the path accordingly
+import About from "../About";
+import Projects from "../Projects";
+import Resume from "../Resume";
+import Contact from "../Contact";
+// import Contact2 from "../Page/Contact2";
 
 import "./styles.css";
 
@@ -19,8 +19,8 @@ export default function Page() {
     activeContent = <Resume />;
   } else if (currentPage === "/Contact") {
     activeContent = <Contact />;
-  } else if (currentPage === "/Contact2") {
-    activeContent = <Contact2 />;
+  // } else if (currentPage === "/Contact2") {
+  //   activeContent = <Contact2 />;
   } else {
     activeContent = <About />;
   }

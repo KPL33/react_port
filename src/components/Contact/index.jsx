@@ -107,7 +107,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
-export default function Contact2() {
+export default function Contact() {
   return (
     <form name="contact" method="post" className="box contact-box">
       <input type="hidden" name="form-name" value="contact" />
