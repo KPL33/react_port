@@ -14,8 +14,6 @@ body {
 .page {
   flex: 1;
   min-height: 63vh;
-  display: flex;
-  justify-content: center;
 }
 
 
