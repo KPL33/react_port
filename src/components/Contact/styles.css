@@ -1,56 +1,18 @@
-/* Add your existing CSS styles here */
-
-.form-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-#contact {
-  text-align: left;
-  color: white;
-  margin-bottom: 20px;
-  font-size: 40px;
-}
-
-.field-titles {
-  color: var(--accent);
-  font-size: 35px;
-  font-family: "Nothing You Could Do", sans-serif;
-  margin-top: 0;
-  text-align: left;
-  display: block;
-  margin-bottom: 10px;
-}
-
-#send {
-  margin: 10px;
-  color: var(--main);
-  margin: 0px;
-  font-size: 20px;
-}
-
-#contact,
-#send {
-  font-family: "Righteous", sans-serif;
-}
-
-form {
-  position: relative;
-  margin: 200px auto;
-  margin-bottom: 500px;
-  background-color: var(--main);
-  padding: 1rem;
+.contact-box {
+  display: flex;
+  flex-direction: column;
   max-width: 80%;
+  text-align: left;
 }
 
-.btn.btn-primary.btn-block.mb-4 {
-  background-color: #f4c542;
-  border-color: white;
+.contact-box p {
+  color: var(--accent);
+  font-family: 'Nothing You Could Do', sans-serif;
+  font-size: 38px;
 }
 
-.btn.btn-primary.btn-block.mb-4:hover {
-  background-color: var(--main);
-  #send {
-    color: white;
-  }
+.contact-box input, textarea {
+  background-color: blue;
+  width: auto;
+  min-width: 60%;
 }
