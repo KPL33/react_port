@@ -104,131 +104,33 @@
 //   );
 // }
 
-import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
+
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [errors, setErrors] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [formValid, setFormValid] = useState(false);
-
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-
-    // Clear errors when the user starts typing
-    setErrors({
-      ...errors,
-      [name]: "",
-    });
-
-    // Update form validity
-    setFormValid(validateForm({ ...formData, [name]: value }, errors));
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    // Validate form fields
-    const newErrors = {
-      name: "",
-      email: "",
-      message: "",
-    };
-
-    if (formData.name.trim() === "" || formData.message.trim() === "") {
-      newErrors.name = "Please enter your name and message.";
-      newErrors.message = "Please enter your name and message.";
-    }
-
-    const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-    if (!emailPattern.test(formData.email)) {
-      newErrors.email = "Please enter a valid email address.";
-    }
-
-    // Update errors and form validity
-    setErrors(newErrors);
-    setFormValid(validateForm(formData, newErrors));
-
-    // If form is valid, submit the form
-    if (formValid) {
-      // Add your form submission logic here
-      console.log("Form submitted:", formData);
-    }
-  };
-
-  const validateForm = (data, errors) => {
-    return (
-      data.name.trim() !== "" &&
-      data.message.trim() !== "" &&
-      errors.name === "" &&
-      errors.email === "" &&
-      errors.message === ""
-    );
-  };
-
   return (
-    <form
-      name="contact"
-      method="post"
-      className="box contact-box"
-      onSubmit={handleSubmit}
-    >
+    <form name="contact" method="post" className="box contact-box">
       <input type="hidden" name="form-name" value="contact" />
-
-      <label>
-        Your Name:{" "}
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        {errors.name && <span className="error">{errors.name}</span>}
-      </label>
-
-      <label>
-        Your Email Address:{" "}
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-        {errors.email && <span className="error">{errors.email}</span>}
-      </label>
-
-      <label>
-        Your Message:{" "}
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-        ></textarea>
-        {errors.message && <span className="error">{errors.message}</span>}
-      </label>
-
-      <button
-        type="submit"
-        style={{ opacity: formValid ? 1 : 0.2 }}
-        disabled={!formValid}
-      >
-        Send
-      </button>
+      
+        <label>
+          Your Name: <input type="text" name="name" />
+        </label>
+      
+      
+        <label>
+          Your Email Address: <input type="email" name="email" />
+        </label>
+      
+      
+        <label>
+          Your Message: <textarea name="message"></textarea>
+        </label>
+      
+      
+        <button type="submit">Send</button>
+      
     </form>
   );
 }
+
