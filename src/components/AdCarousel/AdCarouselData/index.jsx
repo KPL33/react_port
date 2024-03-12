@@ -174,10 +174,10 @@ const AdShowcase = [
   },
   {
     id: 22,
-    title: "CheckMate - print ad",
-    description: "Image of CheckMate print ad.",
+    title: "FMG Pinterest Page Promo - digital ad",
+    description: "Image of FMG Pinterest Page Promo digital ad",
     alt: "Twenty-Second Image",
-    src: checkmatePrev,
+    src: pinterest,
   },
   {
     id: 23,
@@ -199,13 +199,6 @@ const AdShowcase = [
     description: "Image of FMG Social Media Promo print ad",
     alt: "Twenty-Fifth Image",
     src: socialad,
-  },
-  {
-    id: 26,
-    title: "FMG Pinterest Page Promo - digital ad",
-    description: "Image of FMG Pinterest Page Promo digital ad",
-    alt: "Twenty-Sixth Image",
-    src: pinterest,
   },
 ];
 
