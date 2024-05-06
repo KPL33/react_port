@@ -1,11 +1,5 @@
 .contact-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: left;
-}
-
-.contact-box {
   width: 80%;
   height: auto;
   background-color: var(--main);
@@ -13,9 +7,14 @@
   margin: 10% auto;
 }
 
+.contact-box, .form-int {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact-box label {
   color: var(--accent);
-  font-family: "Nothing You Could Do", sans-serif;
   margin-top: 20px;
 }
 
@@ -23,18 +22,37 @@
 textarea {
   border-radius: 0.3em;
   border: none;
-  font-family: "Roboto", sans-serif;
   padding: 10px;
   margin-bottom: 32px;
 }
 
+.contact-box input,
+textarea, .alert {
+  font-family: "Roboto", sans-serif;
+}
+
 .contact-box label, .contact-box input,
 textarea {
-  font-size: 2rem;
   width: 100%;
 }
 
-.contact-box button {
+.contact-box label, .contact-box input,
+textarea, .contact-box label, .alert {
+  font-size: 2rem;
+}
+
+.alert {
+  background-color: var(--bgrnd);
+  color: var(--accent);
+  font-weight: 400;
+  text-align: center;
+}
+
+.contact-box label {
+  font-family: "Nothing You Could Do", sans-serif;
+}
+
+.form-int button {
   font-family: "Righteous", sans-serif;
   font-size: 1.5rem;
   width: auto;
@@ -42,15 +60,23 @@ textarea {
   background-color: var(--main);
   color: var(--accent);
   border-radius: 0.5em;
+  padding: 5px 10px;
 }
 
 .contact-box button:hover {
   background-color: var(--bgrnd);
   color: white;
+  border: 3px solid var(--accent);
 }
 
 @media screen and (max-width: 600px) {
   .contact-box input, textarea, .contact-box label {
     font-size: 1.5rem;
   }
+
+  .alert {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
 }
