@@ -104,116 +104,33 @@
 //   );
 // }
 
-import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
+
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [isValidEmail, setIsValidEmail] = useState(true);
-  const [formErrors, setFormErrors] = useState({});
-
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-    clearErrorMessage();
-  };
-
-  const handleEmailChange = (event) => {
-    const enteredEmail = event.target.value;
-    setEmail(enteredEmail);
-
-    const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-    setIsValidEmail(emailPattern.test(enteredEmail));
-    clearErrorMessage();
-  };
-
-  const handleMessageChange = (event) => {
-    setMessage(event.target.value);
-    clearErrorMessage();
-  };
-
-  const clearErrorMessage = () => {
-    setFormErrors({});
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const errors = {};
-    if (name.trim() === "" || !isValidEmail || message.trim().length < 3) {
-      errors.message =
-        "Please provide your name, a valid email address, and a brief message.";
-    }
-
-    setFormErrors(errors);
-
-    if (Object.keys(errors).length === 0) {
-      // Form submission logic (e.g., API call)
-      console.log("Form submitted successfully:", { name, email, message });
-      // Optionally reset form fields
-      setName("");
-      setEmail("");
-      setMessage("");
-    }
-  };
-
   return (
-    <div className="box contact-box">
-      <form name="contact" method="post" onSubmit={handleSubmit}>
-        <input type="hidden" name="form-name" value="contact" />
-
+    <form name="contact" method="post" className="box contact-box">
+      <input type="hidden" name="form-name" value="contact" />
+      
         <label>
-          Your Name:
-          <input
-            type="text"
-            name="name"
-            value={name}
-            onChange={handleNameChange}
-          />
+          Your Name: <input type="text" name="name" />
         </label>
-
+      
+      
         <label>
-          Your Email Address:
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={handleEmailChange}
-            className={!isValidEmail ? "is-invalid" : ""}
-          />
+          Your Email Address: <input type="email" name="email" />
         </label>
-
+      
+      
         <label>
-          Your Message:
-          <textarea
-            name="message"
-            value={message}
-            onChange={handleMessageChange}
-            rows="4"
-          ></textarea>
+          Your Message: <textarea name="message"></textarea>
         </label>
-
-        <div className="form-int">
-          {Object.keys(formErrors).length > 0 && (
-            <div className="alert alert-danger" role="alert">
-              {formErrors.message}
-            </div>
-          )}
-
-          <button
-            type="submit"
-            className="btn btn-primary"
-            style={{
-              display:
-                Object.keys(formErrors).length > 0 ? "none" : "inline-block",
-            }}
-          >
-            Send
-          </button>
-        </div>
-      </form>
-    </div>
+      
+      
+        <button type="submit">Send</button>
+      
+    </form>
   );
 }
+
