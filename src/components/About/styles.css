@@ -29,7 +29,7 @@
 }
 
 .snark {
-  text-align: left;
+  text-align: center;
   transform: rotateZ(-2deg);
   margin: 20px 0 40px 30px;
   color: var(--accent);

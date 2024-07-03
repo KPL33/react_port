@@ -1,4 +1,4 @@
-import profilepic from "../../assets/gs_no_shad.jpg";
+// import profilepic from "../../assets/gs_no_shad.jpg";
 
 import "./styles.css";
 //Shows the contents of our "About" page, which also loads as the default.
@@ -6,9 +6,9 @@ export default function About() {
   return (
     <section id="about" className="box">
       <div id="row1">
-        <div id="pic-box">
+        {/* <div id="pic-box">
           <img id="profile-pic" src={profilepic} alt="Picture of Kevin Lewis" />
-        </div>
+        </div> */}
 
         <div className="paragraph-box">
             <h3 className="snark">Long Story Short...</h3>
