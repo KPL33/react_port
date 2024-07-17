@@ -8,7 +8,7 @@ export default function Header() {
         <header className="box">
             <div className="header-box" id="name-webdev">
                 <h1 id="name">Kevin Lewis</h1>
-                <h3 id="webdev">Full-Stack Web Developer</h3>
+                <h3 id="webdev">Graphic Designer & Full-Stack Web Developer</h3>
             </div>
             <div id="nav">
                 <NavBar />
