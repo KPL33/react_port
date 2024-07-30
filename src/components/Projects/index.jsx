@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 
 import "./styles.css";
 
+import atg from "../../assets/atg.jpg";
 import gitajob from "../../assets/gitajob.png";
 // import shoes from "../../assets/npm_shoes.png";
 import mf from "../../assets/mf.jpg";
@@ -23,6 +24,14 @@ export default function Projects() {
   const appData = [
     {
       id: 1,
+      imageUrl: atg,
+      title: "Against the Grains",
+      link: "https://againstthegrains-aa0209e9c70a.herokuapp.com/",
+      githubLink: "https://github.com/KPL33/cereal-shop",
+      description: "Click to view this Full-Stack E-Commerce App",
+    },
+    {
+      id: 2,
       imageUrl: mf,
       title: "Movie Fight",
       link: "https://rt-movie-fight.netlify.app/",
@@ -30,7 +39,7 @@ export default function Projects() {
       description: "Click to view this Front-End Movie Rating App",
     },
     {
-      id: 2,
+      id: 3,
       imageUrl: pwd,
       title: "PassFinder",
       link: "https://candid-snickerdoodle-e60aa3.netlify.app/",
@@ -38,7 +47,7 @@ export default function Projects() {
       description: "Click to view this Front-End Password Generator App",
     },
     {
-      id: 3,
+      id: 4,
       imageUrl: weather,
       title: "WeatherWise",
       link: "https://astounding-trifle-53a7a0.netlify.app/",
@@ -46,7 +55,7 @@ export default function Projects() {
       description: "Click to view this Front-End Weather App",
     },
     {
-      id: 4,
+      id: 5,
       imageUrl: jate,
       title: "J.A.T.E.",
       link: "https://cryptic-everglades-02017-1b72bab49c69.herokuapp.com/",
@@ -54,7 +63,7 @@ export default function Projects() {
       description: "Click to view this PWA Text Editing App",
     },
     {
-      id: 5,
+      id: 6,
       imageUrl: gitajob,
       title: "GitAJob",
       link: "https://murmuring-sierra-21351-123e19ae1f23.herokuapp.com/login",
@@ -62,7 +71,7 @@ export default function Projects() {
       description: "Click to view this Full-Stack Job-Search App",
     },
     {
-      id: 6,
+      id: 7,
       imageUrl: scheduler,
       title: "Work Day Scheduler",
       link: "https://kpl33.github.io/work_day_scheduler/",
@@ -70,7 +79,7 @@ export default function Projects() {
       description: "Click to view this Front-End Scheduling App",
     },
     // {
-    //   id: 7,
+    //   id: 8,
     //   imageUrl: shoes,
     //   title: "NPM Shoes",
     //   link: "https://quiet-wave-07026-0aa4799b37aa.herokuapp.com/",
