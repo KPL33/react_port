@@ -17,9 +17,12 @@ header {
   text-align: center;
 }
 
+#name, .header-span {
+  color: white;
+}
+
 #name {
   font-family: "Nothing You Could Do", sans-serif;
-  color: white;
   font-size: 80px;
 }
 
