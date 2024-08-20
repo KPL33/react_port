@@ -8,17 +8,17 @@ export default function Resume() {
       <img src={resume} alt="Resume" />
       <a
         className="download"
-        href="/Kevin_Lewis_Dev_resume_2024.docx"
-        download="Kevin_Lewis_FS_Resume.docx"
-      >
-        Download MS Word .docx
-      </a>
-      <a
-        className="download"
         href={pdfDoc}
         download="Kevin_Lewis_Dev_Resume.pdf"
       >
         Download .pdf
+      </a>
+      <a
+        className="download"
+        href="/Kevin_Lewis_Design_Resume_2024.docx"
+        download="Kevin_Lewis_FS_Resume.docx"
+      >
+        Download MS Word .docx
       </a>
     </div>
   );
