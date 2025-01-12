@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import "./styles.css";
 
 import atg from "../../assets/atg.jpg";
-import gitajob from "../../assets/gitajob.png";
+// import gitajob from "../../assets/gitajob.png";
 // import shoes from "../../assets/npm_shoes.png";
 import mf from "../../assets/mf.jpg";
 import scheduler from "../../assets/scheduler.png";
@@ -19,6 +19,7 @@ export default function Projects() {
   const [clickedBoxes, setClickedBoxes] = useState({});
   const [reveal, setReveal] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1440);
   const clickedBoxRef = useRef(null);
 
   const appData = [
@@ -64,20 +65,20 @@ export default function Projects() {
     },
     {
       id: 6,
-      imageUrl: gitajob,
-      title: "GitAJob",
-      link: "https://murmuring-sierra-21351-123e19ae1f23.herokuapp.com/login",
-      githubLink: "https://github.com/rayr482/job-board",
-      description: "Click to view this Full-Stack Job-Search App",
-    },
-    {
-      id: 7,
       imageUrl: scheduler,
       title: "Work Day Scheduler",
       link: "https://kpl33.github.io/work_day_scheduler/",
       githubLink: "https://github.com/KPL33/work_day_scheduler",
       description: "Click to view this Front-End Scheduling App",
     },
+    // {
+    //   id: 7,
+    //   imageUrl: gitajob,
+    //   title: "GitAJob",
+    //   link: "https://murmuring-sierra-21351-123e19ae1f23.herokuapp.com/login",
+    //   githubLink: "https://github.com/rayr482/job-board",
+    //   description: "Click to view this Full-Stack Job-Search App",
+    // },
     // {
     //   id: 8,
     //   imageUrl: shoes,
@@ -91,12 +92,17 @@ export default function Projects() {
   useEffect(() => {
     const handleResize = () => {
       const newIsMobile = window.innerWidth <= 600;
+      const newIsSmallScreen = window.innerWidth <= 1440;
 
       // Reset state when transitioning between mobile and non-mobile views
       if (isMobile !== newIsMobile) {
         setIsMobile(newIsMobile);
         setClickedBoxes({});
         setReveal(false);
+      }
+
+      if (isSmallScreen !== newIsSmallScreen) {
+        setIsSmallScreen(newIsSmallScreen);
       }
     };
 
@@ -106,7 +112,7 @@ export default function Projects() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [isMobile]);
+  }, [isMobile, isSmallScreen]);
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -190,7 +196,7 @@ export default function Projects() {
     <div className="projects-page-box">
       <h3 className="intro">Apps</h3>
       <div id="apps-section">
-        {appData.map((app) => (
+        {appData.slice(0, -2).map((app) => (
           <div
             key={app.id}
             className={`app-box ${clickedBoxes[app.id] ? "clicked" : ""} ${
@@ -249,7 +255,129 @@ export default function Projects() {
             </div>
           </div>
         ))}
-        
+        {isSmallScreen ? (
+          appData.slice(-2).map((app) => (
+            <div
+              key={app.id}
+              className={`app-box ${clickedBoxes[app.id] ? "clicked" : ""} ${
+                clickedBoxes[app.id] && reveal ? "reveal" : ""
+              }`}
+              onClick={() => handleBoxClick(app.id, false)}
+              onMouseEnter={() => handleMouseEnter(app.id)}
+              onMouseLeave={() => handleMouseLeave(app.id)}
+            >
+              <a
+                href={app.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.preventDefault()}
+              >
+                <img
+                  className="box-container"
+                  src={app.imageUrl}
+                  alt={`Image of ${app.title}`}
+                />
+                <h5
+                  className={`title ${
+                    clickedBoxes[app.id] ? "visible" : "hidden"
+                  }`}
+                >
+                  {app.title}
+                </h5>
+                <h6
+                  className={`desc ${
+                    clickedBoxes[app.id] ? "visible" : "hidden"
+                  }`}
+                >
+                  {app.description}
+                </h6>
+              </a>
+              <div
+                className={`github-link ${
+                  clickedBoxes[app.id] ? "visible" : "hidden"
+                }`}
+              >
+                <a
+                  href={app.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleBoxClick(app.id, true);
+                  }}
+                >
+                  <img
+                    className="github2"
+                    src={github_app_box}
+                    alt="GitHub logo"
+                  />
+                </a>
+              </div>
+            </div>
+          ))
+        ) : (
+          <div className="pair">
+            {appData.slice(-2).map((app) => (
+              <div
+                key={app.id}
+                className={`app-box ${clickedBoxes[app.id] ? "clicked" : ""} ${
+                  clickedBoxes[app.id] && reveal ? "reveal" : ""
+                }`}
+                onClick={() => handleBoxClick(app.id, false)}
+                onMouseEnter={() => handleMouseEnter(app.id)}
+                onMouseLeave={() => handleMouseLeave(app.id)}
+              >
+                <a
+                  href={app.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <img
+                    className="box-container"
+                    src={app.imageUrl}
+                    alt={`Image of ${app.title}`}
+                  />
+                  <h5
+                    className={`title ${
+                      clickedBoxes[app.id] ? "visible" : "hidden"
+                    }`}
+                  >
+                    {app.title}
+                  </h5>
+                  <h6
+                    className={`desc ${
+                      clickedBoxes[app.id] ? "visible" : "hidden"
+                    }`}
+                  >
+                    {app.description}
+                  </h6>
+                </a>
+                <div
+                  className={`github-link ${
+                    clickedBoxes[app.id] ? "visible" : "hidden"
+                  }`}
+                >
+                  <a
+                    href={app.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleBoxClick(app.id, true);
+                    }}
+                  >
+                    <img
+                      className="github2"
+                      src={github_app_box}
+                      alt="GitHub logo"
+                    />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       <h3 className="intro">Design</h3>

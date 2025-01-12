@@ -25,6 +25,13 @@
   transform: scale(1.02);
 }
 
+.pair {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px
+}
+
 .box-container {
   display: inline-block;
   width: 300px;
